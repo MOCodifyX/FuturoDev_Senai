@@ -4,14 +4,6 @@ Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 
 ---
 
-## 📌 **Sumário**
-- [Exercise 1 - HTML: Criação de login](#exercise-1---html-criacao-de-login)
-- [Exercise 2 - CSS: Estilização do login](#exercise-2---css-estilizacao-do-login)
-- [Exercise 3 - Layout: Organização do login](#exercise-3---layout-organizacao-do-login)
-- [Exercise 4 - Explicação: Detalhamento do código](#exercise-4---explicacao-detalhamento-do-codigo)
-
----
-
 ## 📝 **Exercise 1 - HTML: Criação de login**
 📌 **Descrição:**  
 Em uma página HTML, crie a estrutura básica para um formulário de login/senha. Lembre-se de utilizar os inputs corretos para cada um dos campos.
