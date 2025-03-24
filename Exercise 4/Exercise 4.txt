@@ -1,0 +1,112 @@
+Legenda HTML : <!-- descriçao da função -->
+Legenda CSS : /* descriçao da função */ 
+
+
+Descrição do HTML:
+
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como Português do Brasil -->
+
+<head> <!-- Cabeçalho do documento -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para suportar acentuação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração para responsividade -->
+    <title>Exercise FuturoDev</title> <!-- Define o título da aba do navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo de estilos CSS -->
+</head>
+
+<body> <!-- Corpo da página (tudo que será visível ao usuário) -->
+    <div class="left"></div> <!-- Área esquerda da página, definida pela classe "left" -->
+    <div class="right"> <!-- Área direita da página, onde ficará o formulário -->
+        <div class="login"> <!-- Seção do formulário de login -->
+            <h2>Login</h2> <!-- Título da seção de login -->
+            <form> <!-- Início do formulário de login -->
+                <label for="username">User Name</label> <!-- Rótulo do campo de usuário -->
+                <input type="text" id="username" name="username" required> <!-- Campo de entrada de texto para o usuário -->
+
+                <label for="password">Password</label> <!-- Rótulo do campo de senha -->
+                <input type="password" id="password" name="password" required> <!-- Campo de entrada para senha -->
+
+                <button type="submit">Login</button> <!-- Botão para enviar o formulário -->
+            </form> <!-- Fim do formulário -->
+        </div> <!-- Fim da seção "login" -->
+    </div> <!-- Fim da área direita -->
+</body>
+
+</html> <!-- Fim do documento HTML -->
+
+Descrição do CSS:
+
+/* Define o layout da página utilizando CSS Grid, dividindo a tela em duas colunas iguais */
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual */
+    height: 100vh; /* Faz com que o corpo ocupe toda a altura da tela */
+    background-image: url(IMG/background.png); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão */
+}
+
+/* Seção da direita que contém o formulário */
+.right {
+    display: flex; /* Usa Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estiliza o contêiner do formulário de login */
+.login {
+    background: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 10px; /* Arredonda as bordas */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Adiciona sombra sutil */
+    backdrop-filter: blur(2px); /* Aplica efeito de desfoque */
+    width: 420px; /* Define a largura fixa */
+    text-align: center; /* Centraliza o conteúdo */
+    border: 2px solid white; /* Adiciona borda branca */
+}
+
+/* Estiliza o título do formulário */
+.login h2 {
+    margin-bottom: 15px; /* Espaçamento inferior */
+    color: white; /* Define a cor do texto */
+}
+
+/* Estiliza os rótulos dos campos de entrada */
+.login label {
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    display: block; /* Ocupa a linha inteira */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estiliza os campos de entrada do formulário */
+.login input {
+    background: transparent; /* Remove o fundo padrão */
+    width: 100%; /* Faz o input ocupar toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    margin: 5px 0; /* Espaçamento externo */
+    border-radius: 10px; /* Bordas arredondadas */
+    outline: none; /* Remove a borda de foco padrão */
+    border: 2px solid white; /* Define a borda branca */
+    box-sizing: border-box; /* Evita que o padding aumente o tamanho total */
+    color: white; /* Define a cor do texto */
+}
+
+/* Estiliza o botão de envio */
+.login button {
+    width: 100%; /* Faz o botão ocupar toda a largura */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #c3c8fac5; /* Cor de fundo */
+    color: rgb(17, 25, 49); /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    margin-top: 15px; /* Espaçamento superior */
+}
+
+/* Estiliza o botão quando o usuário passa o mouse por cima */
+.login button:hover {
+    background-color: #193457; /* Cor de fundo alterada */
+    color: white; /* Cor do texto alterada */
+}
