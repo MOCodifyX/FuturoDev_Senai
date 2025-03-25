@@ -48,7 +48,7 @@ Desenvolver uma página web para divulgação de pão artesanal. Essa será uma 
 Desenvolva o CSS para a página de pão artesanal, para que ela fique esteticamente mais agradável.
 Aqui é obrigatório o uso de CSSGrid e/ou FlexBox.
 
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Exercise_5/)** 
+🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Exercise_6/)** 
 
 ---
 
