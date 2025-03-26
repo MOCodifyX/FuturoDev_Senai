@@ -44,7 +44,6 @@ p {
     font-weight: bold;
     border-radius: 30px;
     cursor: pointer;
-    transition: background 0.3s;
     transition: transform 0.3s;
 }
 
@@ -253,15 +252,14 @@ header {
 
 /* DEPOIMENTOS */
 
-.testimonials {
+.comments {
     background-color: rgba(247, 157, 40, 0.9);
     display: inline-block;
     padding: 10px 20px;
     text-align: center;
-    padding: 20px;
 }
 
-.testimonial {
+.comment {
     display: inline-block;
     max-width: 300px;
     margin: 15px; /* Espaçamento entre os elementos */
@@ -274,15 +272,15 @@ header {
     transition: transform 0.3s;
 }
 
-.testimonial:hover {
+.comment:hover {
     transform: scale(1.05); /* Pequeno efeito de destaque ao passar o mouse */
 }
 
-.testimonial h4 {
+.comment h4 {
     color: #FFD54F; /* Nome das pessoas em amarelo */
 }
 
-.testimonial img {
+.comment img {
     width: 280px;  /* Define uma largura fixa */
     height: 200px; /* Define uma altura fixa */
     object-fit: cover; /* Corta a imagem para manter a proporção */
