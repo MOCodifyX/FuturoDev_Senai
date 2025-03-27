@@ -51,19 +51,3 @@ Aqui é obrigatório o uso de CSSGrid e/ou FlexBox.
 🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Exercise_6/)** 
 
 ---
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
