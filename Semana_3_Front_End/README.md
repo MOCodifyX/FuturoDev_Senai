@@ -1,69 +1,57 @@
-# 🚀 Exercícios do Curso **FuturoDev** - SENAI
-
-Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
+# 🚀 Exercícios Semana 3 do Curso **FuturoDev** - SENAI
 
 ---
 
-## 📝 **Exercise 1 - HTML: Criação de login**
+## 📝 **Exercise 1 - Variáveis: Salário por hora**
 📌 **Descrição:**  
-Em uma página HTML, crie a estrutura básica para um formulário de login/senha. Lembre-se de utilizar os inputs corretos para cada um dos campos.
+Você está começando a desenvolver um algoritmo (código), em Javascript, para calcular o salário por hora de um funcionário.
 
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Exercise_1/)**  
+Inicialmente seu objetivo é descobrir as variáveis que serão utilizadas para fazer isso. O cálculo do salário leva em consideração as horas trabalhadas, o setor do funcionário e o valor de sua hora; além disso, também precisaremos do nome do funcionário.
+
+Declare todas as variáveis necessárias no arquivo JS que estará trabalhando.
 
 ---
 
-## 🎨 **Exercise 2 - CSS: Estilização do login**
+## 🎨 **Exercise 2 - Operadores Aritméticos: Salário por hora**
 📌 **Descrição:**  
-Desenvolva um arquivo CSS para estilizar o formulário de login. Escolha cores e mantenha o formulário centralizado no meio da página web.
+Com nossas variáveis criadas, podemos fazer o cálculo base para termos o salário por hora.
 
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Exercise_2/)**  
+Esse cálculo é a multiplicação entre o número de horas trabalhadas e o valor do salário por hora.
 
 ---
 
-## 📐 **Exercise 3 - Layout: Organização do login**
+## 📐 **Exercise 3 - If/Else: Salário por hora**
 📌 **Descrição:**  
-Utilize o **CSS Grid** e/ou o **FlexBox** para definir o layout do formulário, garantindo que ele ocupe metade do espaço da página.
+Agora, vamos aumentar a complexidade do nosso código.
 
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Exercise_3/)**  
+Por legislação, temos a questão de horas extras: todos os funcionários trabalham, mensalmente, 220 horas. Quando o valor de horas fica acima de 220, temos de considerar que as horas excedentes são recebidas dobradas, ou seja, um funcionário que trabalhou 230 horas receberá 220 horas normais e 10 horas extras (com valor dobrado).
+
+Utilize o if/else e seu conhecimento matemático para fazer o cálculo do salário, levando essa regra em consideração.
 
 ---
 
-## ✍️ **Exercise 4 - Explicação: Detalhamento do código**
+## ✍️ **Exercise 4 - Operadores lógicos: Salário por hora**
 📌 **Descrição:**  
-Faça uma explicação detalhada do que foi desenvolvido nos exercícios anteriores, apresentando quais **tags** foram usadas no **HTML** e quais **seletores** foram usados no **CSS**.
+Sabemos que também temos a questão dos setores e, levando isso em consideração, aplique as seguintes regras para os setores:
+
+[OP]Operacional: Não é necessário nenhuma mudança de cálculos;
+
+[AD]Administrativo: O valor do salário base é 10% maior;
+
+[GE]Gerência: O valor do salário base é 25% maior, mas não possui horas extras.
 
 ---
 
-## 📝 **Exercise 5 - HTML: Pão Artesanal**
+## 📝 **Exercise 5 - Funções: Salário por hora**
 📌 **Descrição:**  
-Desenvolver uma página web para divulgação de pão artesanal. Essa será uma página única que funcionará como propaganda da empresa.
-É obrigatório o uso de uma imagem e de um texto de propaganda (a seu critério).
-
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Exercise_5/)**
+Você deve criar o fluxo de alteração de valor de salário base em uma função e, outra função, para busca do salário por hora.
 
 ---
 
-## 🎨 **Exercise 6 - CSS: Pão Artesanal**
+## 🎨 **Exercise 6 - Exibição: Salário por hora**
 📌 **Descrição:**  
-Desenvolva o CSS para a página de pão artesanal, para que ela fique esteticamente mais agradável.
-Aqui é obrigatório o uso de CSSGrid e/ou FlexBox.
+Mostre no console a seguinte mensagem, levando em consideração as variáveis que colocarei em negrito:
 
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Exercise_6/)** 
-
----
-
----
-
----
-
----
-
----
-
----
-
----
-
----
+O funcionário, do setor administrativo, João teve 220 horas trabalhadas e 20 horas extras. Seu salário mensal foi de R$ 2.560,00.
 
 ---
