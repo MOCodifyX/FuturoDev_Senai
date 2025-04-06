@@ -1,0 +1,102 @@
+// INÍCIO CÓDIGO NÚMEROS PARES
+const numero = parseInt(prompt("Digite um número inteiro: "));
+// Declaração da constante "numero" e definição dela como um número inteiro, mostrando no prompt a mensagem "Digite um número inteiro: ".
+
+const quantidadePares = contarNumerosPares(numero);
+// Declaração da constante "quantidadePares", que será igual ao resultado da função "contarNumerosPares".
+
+function contarNumerosPares(numero){
+// Abertura da função "contarNumerosPares", declarando a variável (numero).
+
+    let count = 0;
+    // Declaração da variável "count", com valor inicial igual a 0.
+
+    let i = 1;
+    // Declaração da variável "i", com valor inicial igual a 1.
+
+    do {
+    // Abertura do loop "do while", que executa o código pelo menos uma vez antes da verificação.
+
+        if (i % 2 == 0) {
+           // Início do "if" (se), que verifica se "i" dividido por 2 tem resto igual a 0. Se for verdadeiro, adiciona +1 à variável "count".
+
+            count++;
+            // Responsável por adicionar +1 à variável "count", caso o restante da divisão de "i" seja igual a 0 (condição verdadeira).
+
+        }
+        // Fim do bloco "if".
+
+        i++;
+        // Independentemente do resultado anterior, adiciona +1 à variável "i".
+
+    } while (i <= numero);
+    // Fim do loop "do while", com a condição de repetição: enquanto "i" for menor ou igual ao valor de "numero", o loop continua.
+
+    return count;
+    // Retorna para a constante "quantidadePares" o valor final da variável "count".
+
+}
+// Fim da função "contarNumerosPares".
+
+console.log(`A quantidade de números pares até ${numero} é: ${quantidadePares}`);
+// Mostra no console a mensagem: "A quantidade de números pares até (valor de numero) é: (resultado da função contarNumerosPares)".
+
+// FIM CÓDIGO NÚMEROS PARES
+
+
+===========================================================================================================================================================================================================================
+
+
+// NÚMEROS PRIMOS
+
+const numero = parseInt(prompt("Digite um número inteiro: "));
+// Declaração da constante "numero" e definição dela como um número inteiro, mostrando no prompt a mensagem "Digite um número inteiro: ".
+
+function contarNumerosPrimos(numero) {
+// Abertura da função "contarNumerosPrimos", declarando a variável (numero).
+
+    let count = 0;
+    // Declaração da variável "count", com valor inicial igual a 0.
+
+    for (let i = 2; i <= numero; i++) {
+    // Início do loop "for", utilizado principalmente quando já se tem um número prévio de repetições,. Declarando a variável "i" igual a 2 e comparando se "i" é menor ou igual à variável "numero". Se sim, incrementa "i" +1.
+
+        if (ehPrimo(i)) {
+        // Início do "if", utilizando a função "ehPrimo" com o valor de "i" como parâmetro.
+
+            count++;
+            // Caso o número seja primo, incrementa +1 na variável "count".
+
+        }
+        // Fim do "if"
+
+    }
+    // Fim do "for"
+
+    return count;
+    // Retorna o valor final da variável "count", que representa a quantidade de números primos encontrados até o número informado.
+
+}
+// Fim da função "contarNumerosPrimos"
+
+// Função auxiliar pra verificar se um número é primo
+function ehPrimo(n) {
+
+    if (n < 2) return false;
+    // Se "n" for menor que 2, não é primo. Retorna false.
+
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+    // Loop que vai de 2 até a raiz quadrada de "n". Se encontrar algum número que divide "n" sem resto, significa que não é primo.
+
+        if (n % i == 0) return false;
+        // Se o resto da divisão de "n" por "i" for 0, não é primo. Retorna false.
+
+    }
+
+    return true;
+    // Se passar por todo o loop sem retornar false, significa que "n" é primo. Retorna true.
+
+}
+
+console.log(`A quantidade de números primos até ${numero} é: ${contarNumerosPrimos(numero)}`);
+// Exibe no console a quantidade de números primos encontrados até o número informado.
