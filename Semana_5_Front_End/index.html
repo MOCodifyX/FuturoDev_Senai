@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS05</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="login">
+        
+        <form id="formulario_login">
+            <p>Selecione seu Setor</p>
+            <div class="radio-group">
+                <label for="Comercial"><input type="radio" name="Setor" value="1">Comercial</label>
+                <label for="RH"><input type="radio" name="Setor" value="2">RH</label>
+                <label for="TI"><input type="radio" name="Setor" value="3">TI</label>
+            </div>
+
+            <input type="text" id="Usuario" placeholder="Escreva seu Usuário" required>
+            <input type="password" id="Senha" placeholder="Escreva sua Senha" required>
+    
+    
+            <button type="submit">Entrar</button>
+        </form>
+        <div id="msg-error"></div>
+        <script src="script.js"></script>
+    </div>
+
+</body>
+
+</html>
