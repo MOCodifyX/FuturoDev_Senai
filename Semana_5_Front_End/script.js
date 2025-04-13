@@ -1,30 +1,49 @@
-const formulario = document.querySelector("formulario_login");
+// Acesso ao Formulário
+const formulario = document.querySelector("#formulario_login");
 
-let radio = document.querySelector('input[name="setor"]:checked');
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault(); // Impede o envio do formulário até a verificação
 
-const divError = document.getElementById('msg-error');
+    // Pegando o valor do usuário e da senha
+    let usuario = document.getElementById('Usuario').value; 
+    let senha = document.getElementById('Senha').value; 
+    
+    // Pegando o setor selecionado
+    let setor = document.querySelector('input[name="Setor"]:checked'); // Verifica qual setor foi selecionado
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    // Selecionando a div para exibir a mensagem de erro
+    const divError = document.getElementById('msg-error');
 
-    let usuario = document.getElementById('usuario').value;
-    let senha = document.getElementById('senha').value;
+    // Verificando se o setor foi selecionado
+    if (!setor) {
+        divError.innerHTML = "<p>Por favor, selecione um setor!</p>";
+        return;
+    }
 
-    if (email === "nomedo email@blabla" && ((senhaValue === "123456" && setor === "1") || (senhaValue === "123456" && setor === "2") || (senhaValue === "123456" && setor === "3"))) {
+    // Criando as senhas e usuários predefinidos
+    const senhaCorreta = {
+        "1": { usuario: "CMCL12", senha: "Com&c1@l" }, // Comercial
+        "2": { usuario: "98HR", senha: "RH!@2025" }, // RH
+        "3": { usuario: "DEV4567TI", senha: "IT&&||==2025" } // TI
+    };
 
-        switch(setor){
+    // Verificando se a senha está correta de acordo com o setor
+    if (usuario === senhaCorreta[setor.value].usuario && senha === senhaCorreta[setor.value].senha) {
+        // Redireciona para a página correspondente ao setor
+        switch (setor.value) {
             case "1":
-                window.location.href = "index.html"; // Redireciona para nova pagina MUDAR
+                window.location.href = "comercial.html"; // Pagina Comercial
                 break;
             case "2":
-                window.location.href = "index.html"; // Redireciona para nova pagina MUDAR
-                break;
+                window.location.href = "rh.html"; // Pagina RH
+                break
             case "3":
-                window.location.href = "index.html"; // Redireciona para nova pagina MUDAR
+                window.location.href = "ti.html"; // Pagina TI
                 break;
         }
-    }
-    else {
-        divError.innerHTML = "<p> Usuário ou senha inválidos! <p>";
+    } else {
+        // Exibe mensagem de erro se os dados estiverem incorretos
+        const divError = document.getElementById('msg-error');
+        divError.innerHTML = "<p>Usuário ou senha inválidos!</p>";
     }
 });
