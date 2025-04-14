@@ -3,7 +3,7 @@
 Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 
 Link para o resultado final da junção das atividades
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_6_Front_End/Exercise_6/)** 
+🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_5_Front_End/Exercise_6/)** 
 
 ---
 
@@ -59,6 +59,6 @@ Após o login no setor TI, cairemos em uma exibição de um campo para **preench
 
 O intuito é que no campo seja colocado um número qualquer e, ao **pressionar** o botão, seja feita a **conversão** para **número binário** e **exibido** para o usuário.
 
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_6_Front_End/Exercise_6/)** 
+🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_5_Front_End/Exercise_6/)** 
 
 ---
