@@ -12,7 +12,7 @@
     <div class="login">
         
         <form id="formulario_login">
-            <p>Selecione seu Setor</p>
+            <p class="tituloSetor">Selecione seu Setor</p>
             <div class="radio-group">
                 <label for="Comercial"><input type="radio" name="Setor" value="1">Comercial</label>
                 <label for="RH"><input type="radio" name="Setor" value="2">RH</label>
@@ -21,11 +21,11 @@
 
             <input type="text" id="Usuario" placeholder="Escreva seu Usuário" required>
             <input type="password" id="Senha" placeholder="Escreva sua Senha" required>
+            <div id="msg-error"></div>
     
     
             <button type="submit">Entrar</button>
         </form>
-        <div id="msg-error"></div>
         <script src="script.js"></script>
     </div>
 

@@ -17,6 +17,7 @@ formulario.addEventListener('submit', (e) => {
     // Verificando se o setor foi selecionado
     if (!setor) {
         divError.innerHTML = "<p>Por favor, selecione um setor!</p>";
+        divError.style.display = "block"; // Exibe a mensagem de erro
         return;
     }
 
@@ -28,7 +29,7 @@ formulario.addEventListener('submit', (e) => {
     };
 
     // Verificando se a senha está correta de acordo com o setor
-    if (usuario === senhaCorreta[setor.value].usuario && senha === senhaCorreta[setor.value].senha) {
+    if (usuario == senhaCorreta[setor.value].usuario && senha === senhaCorreta[setor.value].senha) {
         // Redireciona para a página correspondente ao setor
         switch (setor.value) {
             case "1":
@@ -42,8 +43,8 @@ formulario.addEventListener('submit', (e) => {
                 break;
         }
     } else {
-        // Exibe mensagem de erro se os dados estiverem incorretos
-        const divError = document.getElementById('msg-error');
-        divError.innerHTML = "<p>Usuário ou senha inválidos!</p>";
+        // Se o login estiver incorreto, exibe uma única mensagem de erro
+        divError.innerHTML = "<p>Usuário ou Senha incorretos!</p>";
+        divError.style.display = "block"; // Exibe a mensagem de erro
     }
 });

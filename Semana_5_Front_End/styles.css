@@ -63,7 +63,7 @@ body {
 }
 
 /* Titulo Selecione seu Setor */
-.login p {
+.tituloSetor {
     color: white;
     font-size: 25px;
 }
@@ -83,3 +83,17 @@ body {
     align-items: center;
 }
 
+/* Mensagem de Erro */
+#msg-error {
+    display: none;
+    color: rgb(255, 0, 0); /* Cor do texto (vermelho) */
+    text-shadow: 2px 2px 4px rgba(1, 26, 138, 0.7); /* Sombra no texto para destaque */
+    background-color: rgba(80, 6, 6, 0.582); /* Fundo semitransparente */
+    border: 1px solid red; /* Borda vermelha */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 15px; /* Tamanho do texto */
+    margin-top: 5px; /* Espaço acima da mensagem */
+    width: 100%; /* Largura total disponível */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Para garantir que o padding não ultrapasse os limites */
+}
