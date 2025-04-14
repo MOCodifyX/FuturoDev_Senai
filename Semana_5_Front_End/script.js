@@ -33,7 +33,7 @@ formulario.addEventListener('submit', (e) => {
         // Redireciona para a página correspondente ao setor
         switch (setor.value) {
             case "1":
-                window.location.href = "comercial.html"; // Pagina Comercial
+                window.location.href = "Comercial.html"; // Pagina Comercial
                 break;
             case "2":
                 window.location.href = "rh.html"; // Pagina RH
