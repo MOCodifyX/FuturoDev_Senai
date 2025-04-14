@@ -5,7 +5,7 @@ Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 ---
 
 ## 📝 **Semanana 1**
-📌Material de Apoio:
+ 📌[Material de Apoio(PDF)](M1S01.pdf)
 
 <details>
   <summary><strong>Aula 1 - 10/03/25 </strong></summary>
@@ -44,7 +44,7 @@ Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 ---
 
 ## 📝 **Semanana 2**
-📌Material de Apoio:
+ 📌[Material de Apoio(PDF)](M1S02.pdf)
 
 <details>
   <summary><strong>Aula 1 - 17/03/25 </strong></summary>
@@ -86,7 +86,7 @@ Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 ---
 
 ## 📝 **Semanana 3**
-📌Material de Apoio:
+ 📌[Material de Apoio(PDF)](M1S03.pdf)
 
 <details>
   <summary><strong>Aula 1 - 24/03/25 </strong></summary>
@@ -129,7 +129,7 @@ Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 ---
 
 ## 📝 **Semanana 4**
-📌Material de Apoio:
+ 📌[Material de Apoio(PDF)](M1S04.pdf)
 
 <details>
   <summary><strong>Aula 1 - 31/03/25 </strong></summary>
@@ -170,7 +170,7 @@ Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 ---
 
 ## 📝 **Semanana 5**
-📌Material de Apoio:
+ 📌[Material de Apoio(PDF)](M1S05.pdf)
 
 <details>
   <summary><strong>Aula 1 - 07/04/25 </strong></summary>
