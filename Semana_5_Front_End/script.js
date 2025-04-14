@@ -36,10 +36,10 @@ formulario.addEventListener('submit', (e) => {
                 window.location.href = "Comercial.html"; // Pagina Comercial
                 break;
             case "2":
-                window.location.href = "rh.html"; // Pagina RH
+                window.location.href = "RH.html"; // Pagina RH
                 break
             case "3":
-                window.location.href = "ti.html"; // Pagina TI
+                window.location.href = "TI.html"; // Pagina TI
                 break;
         }
     } else {
