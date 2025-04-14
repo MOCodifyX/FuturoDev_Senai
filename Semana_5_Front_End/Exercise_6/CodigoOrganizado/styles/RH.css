@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url('../IMG/Background.png');
+    background-position: fixed;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button a {
+    text-decoration: none;
+    color: white;
+}
+
+nav button:hover {
+    background-color: #0056b3;
+}
+
+.container_cargos_salarios {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Info_cargos_salarios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    color: #333;;
+}
+
+.Info_cargos_salarios h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #444;
+}
+
+.Info_cargos_salarios p {
+    margin: 0 0 10px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Estilos para a Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    min-width: auto;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ffffff;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.2em;
+}
+
+table td {
+    background-color: #ffffffcb;
+    color: #050505;
+}
+
+.hidden {
+    display: none;
+}

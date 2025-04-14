@@ -1,0 +1,66 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-image: url(../IMG/Background.png);
+    background-size: fixed;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+/* Container do conversor */
+.converter-container {
+    background: #ffffff;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#binary-output {
+    margin-top: 20px;
+    font-size: 20px;
+    word-wrap: break-word; /* Permite quebrar palavras muito longas */
+    word-break: break-all; /* Quebra o texto em qualquer ponto, se necessário */
+    overflow-wrap: break-word; /* Compatibilidade adicional para navegadores mais antigos */
+    max-width: 100%; 
+}

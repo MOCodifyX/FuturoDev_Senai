@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../IMG/Background.png);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    width: 420px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.login h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.login label {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login input {
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid white;
+    box-sizing: border-box; /* Impede que a caixa de Imput ultrapasse os limites do border-box */
+}
+
+.login button {
+    width: 50%;
+    padding: 10px;
+    background-color: #c3c8fac5;
+    color: rgb(17, 25, 49);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.login button:hover {
+    background-color: #193457;
+    color: white;
+}
+
+/* DEFINE A COR DO TEXTO DENTRO DO INPUT USUARIO E SENHA */
+.login ::placeholder {
+    color:white;
+}
+
+/* Titulo Selecione seu Setor */
+.tituloSetor {
+    color: white;
+    font-size: 25px;
+}
+
+/* Agrupa os rádios em uma linha */
+.radio-group {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+/* Alinha bolinha antes do texto */
+.radio-group label {
+    display: flex;
+    gap: 10px;
+    color: white;
+    align-items: center;
+}
+
+/* Mensagem de Erro */
+#msg-error {
+    display: none;
+    color: rgb(255, 0, 0); /* Cor do texto (vermelho) */
+    text-shadow: 2px 2px 4px rgba(1, 26, 138, 0.7); /* Sombra no texto para destaque */
+    background-color: rgba(80, 6, 6, 0.582); /* Fundo semitransparente */
+    border: 1px solid red; /* Borda vermelha */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 15px; /* Tamanho do texto */
+    margin-top: 5px; /* Espaço acima da mensagem */
+    width: 100%; /* Largura total disponível */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Para garantir que o padding não ultrapasse os limites */
+}
