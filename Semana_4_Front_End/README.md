@@ -1,4 +1,4 @@
-# 🚀 Exercícios do Curso **FuturoDev** - SENAI
+# 🚀 Exercícios Semana 4 do Curso **FuturoDev** - SENAI
 
 Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 
