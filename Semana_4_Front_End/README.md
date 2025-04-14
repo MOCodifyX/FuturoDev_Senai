@@ -4,50 +4,56 @@ Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 
 ---
 
-## 📝 **Exercise 1 - HTML: Criação de login**
+## 🔢 **Exercise 1 - For: Números primos**
 📌 **Descrição:**  
-Em uma página HTML, crie a estrutura básica para um formulário de login/senha. Lembre-se de utilizar os inputs corretos para cada um dos campos.
+Desenvolva uma função onde você receberá **um número inteiro** e, ela, lhe retornará **quantos números primos** existem até a chegada do número informado. Utilize a estrutura de repetição **FOR**.
 
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_2_Front_End/Exercise_1/)** 
+Ex.: Informo 10 e o retorno será 4 (que é a quantidade de números pares (2, 3, 5 e 7).
 
 ---
 
-## 🎨 **Exercise 2 - CSS: Estilização do login**
+## 🔄 **Exercise 2 - Do while/while: Números pares**
 📌 **Descrição:**  
-Desenvolva um arquivo CSS para estilizar o formulário de login. Escolha cores e mantenha o formulário centralizado no meio da página web.
+Desenvolva uma função onde você receberá **um número inteiro** e, ela, lhe retornará **quantos números pares** existem até a chegada do número informado. Utilize a estrutura de repetição DO **WHILE/WHILE** (exclua o número 0 da conta).
 
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_2_Front_End/Exercise_2/)** 
+Ex.: Informo 10 e o retorno será 5 (que é a quantidade de números primos (2, 4, 6, 8 e 10).
 
 ---
 
-## 📐 **Exercise 3 - Layout: Organização do login**
+## 🔁 **Exercise 3 - Estrutura de repetição: Números impares**
 📌 **Descrição:**  
-Utilize o **CSS Grid** e/ou o **FlexBox** para definir o layout do formulário, garantindo que ele ocupe metade do espaço da página.
+Desenvolva uma função onde você receberá **um número inteiro** e, ela, lhe retornará **quantos números impares** existem até a chegada do número informado. Utilize a estrutura de repetição de **sua preferência**.
 
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_2_Front_End/Exercise_3/)** 
+Ex.: Informo 10 e o retorno será 5 (que é a quantidade de números primos (1, 3, 5, 7 e 9).
 
 ---
 
-## ✍️ **Exercise 4 - Explicação: Detalhamento do código**
+## ➕ **Exercise 4 - Arrow function: Soma e subtração**
 📌 **Descrição:**  
-Faça uma explicação detalhada do que foi desenvolvido nos exercícios anteriores, apresentando quais **tags** foram usadas no **HTML** e quais **seletores** foram usados no **CSS**.
+Utilize arrow function para criar funções de **soma** e **subtração** de dois números.
 
 ---
 
-## 📝 **Exercise 5 - HTML: Pão Artesanal**
+## 📋**Exercise 5 - Estrutura de repetição: Menu**
 📌 **Descrição:**  
-Desenvolver uma página web para divulgação de pão artesanal. Essa será uma página única que funcionará como propaganda da empresa.
-É obrigatório o uso de uma imagem e de um texto de propaganda (a seu critério).
+Crie um menu para executar os exercícios feitos anteriormente. As opções do menu serão as seguintes:
 
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_2_Front_End/Exercise_5/)** 
+[1] Somar dois números;
+
+[2] Subtrair dois números;
+
+[3] Buscar quantidade números pares;
+
+[4] Buscar quantidade números impares;
+
+[5] Buscar quantidade números primos;
+
+[6] Sair.
 
 ---
 
-## 🎨 **Exercise 6 - CSS: Pão Artesanal**
+## 🧠 **Exercise 6 - Explicação: Números pares e primos**
 📌 **Descrição:**  
-Desenvolva o CSS para a página de pão artesanal, para que ela fique esteticamente mais agradável.
-Aqui é obrigatório o uso de CSSGrid e/ou FlexBox.
-
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_2_Front_End/Exercise_6/)** 
+Explique, **descritivamente**, o código que foi feito para a busca dos números pares e dos números primos.
 
 ---
