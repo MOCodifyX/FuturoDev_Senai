@@ -208,3 +208,37 @@ Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 </details>
 
 ---
+
+## 📝 **Semanana 6**
+ 📌[Material de Apoio(PDF)](PDF_Aulas/M1S06.pdf)
+
+<details>
+  <summary><strong>Aula 1 - 14/04/25 </strong></summary>
+
+  *Nesta aula, aprendemos os seguintes tópicos:*
+  
+- O que são ARRAYS?
+- Criação e manipulação
+- Métodos avançados
+
+- Exercícios;
+
+</details>
+<details>
+  <summary><strong>Aula 2 - 16/04/25 </strong></summary>
+
+  *Nesta aula, aprendemos os seguintes tópicos:*
+  
+- Módulos
+- Browser API
+- Assincronicidade
+
+</details>
+<details>
+  <summary><strong>Aula 3 - 18/04/25 </strong></summary>
+
+  *Aula Adiada Motivo Feriado*
+
+</details>
+
+---
