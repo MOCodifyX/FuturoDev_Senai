@@ -19,6 +19,7 @@ startButton.addEventListener("click", () => {
     const nickname = nicknameInput.value.trim(); // Remove espaços em branco no início e no final
 
     if (nickname) {
+        localStorage.setItem("nickname", nickname); // Armazena o nome do jogador no localStorage   
         playerNameSpan.textContent = nickname; // Atualiza o nome do jogador na tela do jogo
         loginScreen.style.display = "none"; // Esconde a tela de login
         gameScreen.style.display = "flex"; // Mostra a tela do jogo
@@ -105,7 +106,12 @@ function updateWrongLettersDisplay() {
 // Verifica se o Jogador venceu
 function checkWinCondition() {
     if (selectedWord.split("").every(letter => correctLetters.includes(letter))) {
+
+        const nickname = localStorage.getItem("nickname"); // Recupera o nome do jogador
+
         document.getElementById("final-word").textContent = selectedWord; // Mostra a palavra final
+        document.getElementById("nickname-display").textContent = nickname; // Mostra o nome do jogador
+
         gameScreen.style.display = "none"; // Esconde a tela do jogo 
         congratulationsScreen.style.display = "flex"; // Mostra a tela de vitória
     }
