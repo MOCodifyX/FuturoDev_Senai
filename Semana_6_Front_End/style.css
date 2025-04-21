@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(IMG/1322308.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Tela de login */
+.tela-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Estilo do campo de entrada nickname */
+input[type="text"] {
+    width: 90%;
+    padding: 12px 20px; /* Espaçamento interno */
+    margin-top: 10px; /* Espaço superior */
+    margin-bottom: 20px; /* Espaço inferior */
+    font-size: 16px; /* Tamanho do texto */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Fonte legível */
+    border: 2px solid #ddd; /* Borda cinza clara */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* esilo botão jogar*/
+button {
+    background-color: #534caf; /* Cor de fundo verde */
+    margin-top: 10px; /* Espaço entre o botão e o campo de entrada */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 12px 24px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    display: inline-block; /* Torna o botão inline */
+    font-size: 16px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    border-radius: 8px; /* Borda arredondada */
+    cursor: pointer; /* Mostra o cursor de "mãozinha" */
+}
+
+/* Cor dos Titulos */
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* estilo msg de boas vindas */
+.msg-good-luck {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* tela jogo da forca */
+.tela-jogo-da-forca {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* container do jogo */
+.jogo-container {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+/*coluna esquerda*/
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 2;
+}
+
+/* tela palavra */
+.display-chutar-letras, 
+.display-letras-certas {
+    background-color: rgba(255, 255, 255, 0.452);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
+}
+
+.display-chutar-letras input[type="text"] {
+    height: 100%;
+    width: 100%; /* Faz o campo ocupar toda a largura do contêiner */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+    font-size: 160px; /* Ajusta o tamanho da fonte para responsividade */
+    text-align: center; /* Centraliza o texto dentro do campo */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border-radius: 15px;
+}
+
+/* Estilo exclusivo para o placeholder */
+.display-chutar-letras input[type="text"]::placeholder {
+    font-size: 20px; /* Tamanho da letra do placeholder */
+    text-align: center; /* Centraliza o texto do placeholder */;
+}
+
+.display-chutar-letras button {
+    width: 100%; /* Faz o botão ocupar toda a largura do contêiner */
+    box-sizing: border-box; /* Garante que padding e borda não ultrapassem a largura */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    padding: 10px; /* Adiciona espaçamento interno */
+    margin-top: 10px; /* Espaço entre o botão e o campo de entrada */
+    cursor: pointer; /* Mostra o cursor de mão ao passar sobre o botão */
+    border-radius: 15px;
+}
+
+/* tamanho letras certas */
+.display-letras-certas {
+    font-size: 40px; /* Tamanho da letra do placeholder */
+}
+
+
+/* tela letras erradas - coluna direita*/
+.display-letras-erradas {
+    background-color: rgba(255, 255, 255, 0.452);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+/* tela jogar novamente */
+.tela-jogar-novamente {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* letras eeradas */
+#wrong-letters {
+    font-size: 60px; /* Tamanho da letra do placeholder */
+    text-align: center; /* Centraliza o texto do placeholder */;
+}
+
+/* TITULO */
+.title {
+    color: #000000;
+    font-size: 35px;
+    text-align: center;
+}

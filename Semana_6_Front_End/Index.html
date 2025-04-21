@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tela de login -->
+    <section class="tela-login">
+        <h1>Escreva seu Apelido</h1>
+        <input type="text" id="nickname" required>
+        <button type="submit">Iniciar Partida</button>
+    </section>
+
+    <!-- Tela do jogo -->
+    <section class="tela-jogo-da-forca">
+
+        <header>
+            <h1 class="msg-good-luck">Boa Sorte <span id="player-name"></span></h1>
+        </header>
+
+        <div class="jogo-container">
+
+            <div class="coluna-esquerda">
+
+                <div class="display-chutar-letras">
+                    <input type="text" id="letter" placeholder="⁉️ Digite uma Letra ⁉️" maxlength="1" required>
+                    <button id="guess-button">Chutar</button>
+                </div>
+                <div class="display-letras-certas">
+                    <p id="word-display">_ _ _ _ _</p>
+                </div>
+                
+            </div>
+
+            <div class="display-letras-erradas">
+                <p class="title">Letras Erradas: </p>
+                <span id="wrong-letters"></span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Botão para jogar novamente -->
+    <section class="tela-jogar-novamente">
+
+        <h1>Parabéns <span id="player-name"></span>! Você descobriu o Elemento <span id="final-word"></span> 🎉</h1>
+        <button id="play-again">Jogar Novamente</button>   
+
+    </section>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
