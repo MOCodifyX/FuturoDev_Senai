@@ -1,0 +1,55 @@
+body { 
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo com blur */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./IMG/Leonardo_Kino_XL_Vectorstyle_background_featuring_paubrasil_Br_1.jpg'); /* Coloque o caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Aplica o blur */
+    z-index: -1; /* Coloca atrás do conteúdo */
+  }
+
+/* Tela de login */
+
+.tela-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Estilo do campo de entrada nickname */
+input[type="text"] {
+    width: 90%;
+    padding: 12px 20px; /* Espaçamento interno */
+    margin-top: 10px; /* Espaço superior */
+    margin-bottom: 20px; /* Espaço inferior */
+    font-size: 16px; /* Tamanho do texto */
+    text-align: center;
+    border: 2px solid #ddd; /* Borda cinza clara */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+input[type="password"] {
+    width: 90%;
+    padding: 12px 20px; /* Espaçamento interno */
+    margin-top: 10px; /* Espaço superior */
+    margin-bottom: 20px; /* Espaço inferior */
+    font-size: 16px; /* Tamanho do texto */
+    text-align: center;
+    border: 2px solid #ddd; /* Borda cinza clara */
+    border-radius: 8px; /* Bordas arredondadas */
+}
