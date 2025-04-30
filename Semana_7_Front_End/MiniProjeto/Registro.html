@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniProjetoMS07</title>
+
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header >
+        <nav class="menu">
+            <ul>
+            
+                <button class="menu-btn" onclick="window.location.href='Relatorios.html'">Relatórios</button>
+                <button class="menu-btn" onclick="window.location.href='Destaques.html'">Destaques</button>
+                <button class="menu-btn" onclick="window.location.href='Registro.html'">Registro</button>
+                <button class="menu-btn" onclick="window.location.href='Perfil.html'">Perfil</button>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tela-registro">
+
+        <div class="Inputs"> 
+
+            
+                
+
+            <div class="input-container">
+                <i class="fa-solid fa-seedling" style="color: #000000;"></i>
+                <input type="text" id="totalArvores" placeholder="Quantidade Plantada" required>
+            </div>
+            
+            <div class="input-container">
+
+                <i class="fa-solid fa-tree" style="color: #050505;"></i>
+
+                <select id="tipo" name="tipo" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="Ipes">Ipês</option>
+                    <option value="Angicos">Angicos</option>
+                    <option value="Aroeiras">Aroeiras</option>
+                    <option value="Jequitibas">Jequitibás</option>
+                    <option value="Perobadocampo">Peroba do campo</option>
+                </select>
+
+            </div>
+        </div>
+
+        <button type="submit" id="submit-btn-registrar">Registrar Contribuição</button>
+
+    </section>
+
+    <section class="tela-dados">
+
+        <h1> Contribuições </h1>
+
+    <p>Cultivar uma árvore é semear esperança no tempo!</p>
+
+    <section class="tabela">
+        <table>
+
+            <th>Mês</th>
+            <th>Quantidade Plantada</th>
+
+            <tbody>
+
+                <td>Janeiro</td>
+                <td>500</td>
+
+            </tbody>
+
+            <tbody>
+
+                <td>Fevereiro</td>
+                <td>1060</td>
+
+            </tbody>
+
+            <tbody>
+
+                <td>Março</td>
+                <td>1020</td>
+
+            </tbody>
+
+            <tbody>
+
+                <td>Abril</td>
+                <td>10120</td>
+
+            </tbody>
+
+            <tbody>
+
+                <td>Maio</td>
+                <td>1300</td>
+
+            </tbody>
+
+            <img src="./IMG/pink1.jpg" alt="Imagem de uma arvore" id="tree-img">
+
+        </table>
+
+    </section>
+
+</body>
+
+<script src="Login.js"></script>
+
+</html>

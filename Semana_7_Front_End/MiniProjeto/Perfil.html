@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniProjetoMS07</title>
+
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header >
+        <nav class="menu">
+            <ul>
+            
+                <button class="menu-btn" onclick="window.location.href='Relatorios.html'">Relatórios</button>
+                <button class="menu-btn" onclick="window.location.href='Destaques.html'">Destaques</button>
+                <button class="menu-btn" onclick="window.location.href='Registro.html'">Registro</button>
+                <button class="menu-btn" onclick="window.location.href='Perfil.html'">Perfil</button>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tela-perfil">
+
+        <div class="dados-perfil">
+            <h1>Informaçoes da Conta </h1>
+            <p> Nome: <span id="username"></span></p>
+            <p>Email: emailgenerico@gmail.com.br </p>
+            <p>Telefone: (00) 0 0000-0000</p>
+            <p>Data de Nascimento: 00/00/0000</p>
+            <p>Quantidade de Árvores Plantadas: <span id="TotalArvores"></span></p>
+        </div>
+
+        <img src="./IMG/pink1.jpg" alt="Imagem de uma arvore" id="tree-img-perfil">
+
+
+        <section class="tela-badges">
+
+            <h1>Emblemas Conquistados</h1>
+
+            <div class="badges">
+
+                <img src="./IMG/pink1.jpg" alt="Imagem de uma Semente" id="badges1">
+
+                <img src="./IMG/pink2.jpg" alt="Imagem de uma Muda" id="badges2">
+
+                <img src="./IMG/pink3.jpg" alt="Imagem de uma Arvore Jovem" id="badges3">
+
+                <img src="./IMG/pink4.jpg" alt="Imagem de uma Arvore Adulta" id="badges4">
+
+            </div>
+        </section>
+
+        <div class="descricao-perfil">
+
+            <p id="bio-display" contenteditable="true">Clique aqui para editar sua bio...</p>
+            <button id="save-bio-btn">Salvar Bio</button>
+
+        </div>
+
+    </section>
+
+</body>
+
+    <script src="Login.js"></script>
+
+</html>
