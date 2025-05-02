@@ -74,6 +74,18 @@ input[type="password"] {
     border-radius: 8px; /* Bordas arredondadas */
 }
 
+input[type="search"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Garante que padding não ultrapasse a largura */
+}
+
 button {
     background-color: var(--primary-color);
     margin-top: 10px; /* Espaço entre o botão e o campo de entrada */
@@ -186,6 +198,25 @@ h3 {
 
 /* TELA 2 - REGISTRO REFLORESTAMENTO */
 
+.tela-dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.tela-registro h1 {
+    text-align: center;
+}
+
+.tela-registro p {
+    text-align: center;
+}
+
 header {
     background-color: var(--background-color);
     padding: 10px 0; 
@@ -228,29 +259,40 @@ header {
     height: 35ch;
 }
 
+.input-container #totalArvores {
+    width: 100%; 
+    padding: 12px; 
+    font-size: 16px; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    text-align: center;
+    margin: 10px 0; 
+    box-sizing: border-box; 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.input-container #tipo {
+    width: 100%; 
+    padding: 12px; 
+    font-size: 16px; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    text-align: center;
+    margin: 10px 0; 
+    box-sizing: border-box; 
+}
 
 
 /* TELA 3 - PERFIL DO USUARIO */
 
 .tela-perfil {
+    position: absolute; 
+    top: 150px; /* Posiciona no topo da tela */
+    background-color: var(--background-color);
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    border: 2px solid #ffffff;
+    
     display: grid;
     grid-template-columns: 2fr 1fr; /* Coluna esquerda menor, coluna direita maior */
     grid-template-rows: auto auto auto; 
@@ -267,25 +309,12 @@ header {
     border: 2px solid #ffffff;
 }
 
-.tela-dados {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--background-color);
-    border-radius: 15px;
-    padding: 20px;
-    width: 90%;
-    max-width: 400px;
-    border: 2px solid #ffffff;
-}
-
 #tree-img-perfil {
     border-radius: 15px;
     border: 2px solid #ffffff;
     background-size: cover;
-    width: 55ch; 
-    height: 40ch;
+    width: 100%; 
+    height: 100%;
 }
 
 .tela-badges { 
@@ -346,6 +375,16 @@ header {
 
 /* TELA 4 - DESTAQUES */
 
+.tela-destaques{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: var(--background-color);
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid #ffffff;
+}
+
 .destaque-pessoa {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -383,4 +422,45 @@ header {
 
 
 
+
 /* TELA 5 - PESQUISA RELATORIOS */
+
+.tela-relatorios {
+    position: absolute; 
+    top: 150px; /* Posiciona no topo da tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: var(--background-color);
+    border-radius: 15px;
+    padding: 10px;
+    width: 90%;
+    border: 2px solid #ffffff;
+}
+
+#lista-relatorio {
+    display: grid; /* Organiza os itens em um grid */
+    grid-template-columns: repeat(3, 1fr); /* 5 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    width: 100%; /* Ocupa toda a largura do container pai */
+    max-height: 70vh; /* Limita a altura da div a 70% da altura da janela */
+    overflow-y: auto; /* Ativa a rolagem vertical quando necessário */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/*REPONSIVIDADE DA TELA*/
+/* Ajusta as colunas para telas menores */
+@media (max-width: 1024px) {
+    #lista-relatorio {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    #lista-relatorio {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

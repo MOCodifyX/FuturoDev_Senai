@@ -102,19 +102,34 @@ document.addEventListener('DOMContentLoaded', inicializar);
 
 // Classe para Dados Falsos
 class DadosFake {
-  constructor(username, arvoresPlantadas) {
+  constructor(username, arvoresPlantadas, imgUsuario) {
+    this.imgUsuario = imgUsuario
     this.username = username;
     this.arvoresPlantadas = arvoresPlantadas;
   }
 }
 
 // Criando uma instância com dados falsos
-let pessoa1 = new DadosFake("Jessica Amaral", 350);
-let pessoa2 = new DadosFake("Carlos Silva", 210);
-let pessoa3 = new DadosFake("Ana Costa", 180);
+const pessoas = [
+  new DadosFake("Jessica Amaral", 350, "./IMG/red2.jpg"),
+  new DadosFake("Carlos Silva", 210, "./IMG/brown1.jpg"),
+  new DadosFake("Ana Costa", 180, "./IMG/pink1.jpg"),
+  new DadosFake("Lucas Ferreira", 400, "./IMG/red2.jpg"),
+  new DadosFake("Mariana Rocha", 275, "./IMG/brown1.jpg"),
+  new DadosFake("Rafael Lima", 125, "./IMG/pink1.jpg"),
+  new DadosFake("Fernanda Nunes", 390, "./IMG/red2.jpg"),
+  new DadosFake("Eduardo Ramos", 720, "./IMG/pink3.jpg"),
+  new DadosFake("Bianca Torres", 180, "./IMG/pink1.jpg"),
+  new DadosFake("Gabriel Souza", 290, "./IMG/brown1.jpg"),
+  new DadosFake("Lívia Martins", 1150, "./IMG/red3.jpg"),
+  new DadosFake("Pedro Almeida", 310, "./IMG/pink2.jpg"),
+  new DadosFake("Juliana Castro", 2205, "./IMG/brown4.jpg"),
+  new DadosFake("Thiago Moreira", 260, "./IMG/red1.jpg"),
+  new DadosFake("Sofia Barbosa", 330, "./IMG/pink2.jpg"),
+];
 
 // Transformando os dados em JSON (simulação)
-const JsonDadosFake = JSON.stringify([pessoa1, pessoa2, pessoa3]);
+const JsonDadosFake = JSON.stringify(pessoas);
 
 // Simulando um "fetch" com os dados locais
 const fakeFetch = new Promise((resolve) => {
@@ -138,7 +153,7 @@ fakeFetch
       telaDestaques.innerHTML += `
         <div class="destaque-pessoa">
           <div class="destaque-coluna1">
-            <img src="./IMG/pink1.jpg" alt="Imagem de uma árvore" id="tree-img-destaques">
+            <img src="${post.imgUsuario}" alt="Imagem de uma árvore" id="tree-img-destaques">
           </div>
           <div class="destaque-coluna2">
             <h1>${post.username}</h1>
@@ -232,6 +247,7 @@ if (window.location.pathname.includes('Registro.html')) {
         localStorage.setItem('dadosLogin', JSON.stringify(dadosLogin));
 
         alert(`Total de árvores atualizadas: ${dadosLogin.TotalArvores}`);
+        location.reload();
       });
     }
   });
@@ -279,5 +295,59 @@ function atualizarFotoDePerfil() {
     }
   }
 
+//
+//
+//
+// REGISTRO ARVORES PLANTADAS
+//
+//
+//
 
+// tela de relatorios exição de dados
+if (window.location.pathname.includes('Relatorios.html')) {
+  fakeFetch
+    .then((data) => {
+      console.log("Dados Recebidos", data); // Exibe os dados no console
+
+      const telaDestaques = document.getElementById("lista-relatorio"); // Seleciona o elemento onde os posts serão exibidos
+      const searchInput = document.querySelector('input[type="search"]'); // Campo de busca
+
+      // Função para exibir os dados na lista
+      const exibirDados = (dados) => {
+        telaDestaques.innerHTML = ''; // Limpa a lista
+        dados.forEach((post) => {
+          telaDestaques.innerHTML += `
+            <div class="destaque-pessoa">
+              <div class="destaque-coluna1">
+                <img src="${post.imgUsuario}" alt="Imagem de uma árvore" id="tree-img-destaques">
+              </div>
+              <div class="destaque-coluna2">
+                <h1>${post.username}</h1>
+                <p>🌳 Árvores Plantadas: ${post.arvoresPlantadas}</p>
+              </div>
+            </div>
+          `;
+        });
+      };
+
+      // Exibe todos os dados inicialmente
+      exibirDados(data);
+
+      // Adiciona evento para filtrar os dados com base no campo de busca
+      searchInput.addEventListener('input', (e) => {
+        const searchValue = e.target.value.toLowerCase();
+
+        // Filtra os dados com base no valor pesquisado
+        const filteredData = data.filter(post => 
+          post.username.toLowerCase().includes(searchValue)
+        );
+
+        // Atualiza a lista com os dados filtrados
+        exibirDados(filteredData);
+      });
+    })
+    .catch((error) => {
+      console.error("Erro ao buscar dados:", error); // Exibe erros no console
+    });
+}
 
