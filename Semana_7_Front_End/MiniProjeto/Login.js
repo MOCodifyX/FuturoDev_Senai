@@ -165,13 +165,7 @@ fakeFetch
   });
 }
 
-//
-//
-//
 // BIO DO PERFIL
-//
-//
-//
 
 //mostrando dados no perfil
 const dados = JSON.parse(localStorage.getItem("dadosLogin"));
@@ -218,13 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 };
 
-//
-//
-//
 // REGISTRO ARVORES PLANTADAS
-//
-//
-//
 
 // Função simples para registrar árvores plantadas
 if (window.location.pathname.includes('Registro.html')) {
@@ -295,13 +283,7 @@ function atualizarFotoDePerfil() {
     }
   }
 
-//
-//
-//
-// REGISTRO ARVORES PLANTADAS
-//
-//
-//
+// RELATORIOS
 
 // tela de relatorios exição de dados
 if (window.location.pathname.includes('Relatorios.html')) {
