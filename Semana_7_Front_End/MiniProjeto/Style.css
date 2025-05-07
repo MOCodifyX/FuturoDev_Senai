@@ -74,18 +74,6 @@ input[type="password"] {
     border-radius: 8px; /* Bordas arredondadas */
 }
 
-input[type="search"] {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    text-align: center;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-sizing: border-box; /* Garante que padding não ultrapasse a largura */
-}
-
 button {
     background-color: var(--primary-color);
     margin-top: 10px; /* Espaço entre o botão e o campo de entrada */
@@ -357,6 +345,30 @@ header {
     border: 2px solid #ffffff;
 }
 
+.input-container #user-search {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.input-container #tree-type-search {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
 .destaque-pessoa {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -368,7 +380,8 @@ header {
 }
 .destaque-coluna1 {
     display: grid;
-    place-items: center;
+    place-items: top;
+    padding-top: 25px;
     padding-right: 20px;
 }
 

@@ -102,66 +102,59 @@ document.addEventListener('DOMContentLoaded', inicializar);
 
 // Classe para Dados Falsos
 class DadosFake {
-  constructor(username, arvoresPlantadas, imgUsuario) {
+  constructor(username, arvoresPlantadas, ipes, angicos, aroeiras, jequitibas, perovaDoCampo, imgUsuario) {
     this.imgUsuario = imgUsuario
     this.username = username;
     this.arvoresPlantadas = arvoresPlantadas;
+    this.ipes = ipes;
+    this.angicos = angicos;
+    this.aroeiras = aroeiras;
+    this.jequitibas = jequitibas;
+    this.perovaDoCampo = perovaDoCampo;
   }
 }
 
 // Criando uma instância com dados falsos
 const pessoas = [
-  new DadosFake("Jessica Amaral", 350, "./IMG/red2.jpg"),
-  new DadosFake("Carlos Silva", 210, "./IMG/brown1.jpg"),
-  new DadosFake("Ana Costa", 180, "./IMG/pink1.jpg"),
-  new DadosFake("Lucas Ferreira", 400, "./IMG/red2.jpg"),
-  new DadosFake("Mariana Rocha", 275, "./IMG/brown1.jpg"),
-  new DadosFake("Rafael Lima", 125, "./IMG/pink1.jpg"),
-  new DadosFake("Fernanda Nunes", 390, "./IMG/red2.jpg"),
-  new DadosFake("Eduardo Ramos", 720, "./IMG/pink3.jpg"),
-  new DadosFake("Bianca Torres", 180, "./IMG/pink1.jpg"),
-  new DadosFake("Gabriel Souza", 290, "./IMG/brown1.jpg"),
-  new DadosFake("Lívia Martins", 1150, "./IMG/red3.jpg"),
-  new DadosFake("Pedro Almeida", 310, "./IMG/pink2.jpg"),
-  new DadosFake("Juliana Castro", 2205, "./IMG/brown4.jpg"),
-  new DadosFake("Thiago Moreira", 260, "./IMG/red1.jpg"),
-  new DadosFake("Sofia Barbosa", 330, "./IMG/pink2.jpg"),
+  new DadosFake("Jessica Amaral", 350, 300, 50, 0, 0, 0, "./IMG/red2.jpg"),
+  new DadosFake("Carlos Silva", 210, 0, 200, 10, 0, 0, "./IMG/brown1.jpg"),
+  new DadosFake("Ana Costa", 180, 0, 0, 180, 0, 0, "./IMG/pink1.jpg"),
+  new DadosFake("Lucas Ferreira", 400, 0, 0, 0, 300, 100, "./IMG/red2.jpg"),
+  new DadosFake("Mariana Rocha", 275, 0, 0, 0, 0, 175, "./IMG/brown1.jpg"),
+  new DadosFake("Rafael Lima", 125, 100, 25, 0, 0, 0, "./IMG/pink1.jpg"),
+  new DadosFake("Fernanda Nunes", 390, 0, 0, 300, 0, 90, "./IMG/red2.jpg"),
+  new DadosFake("Eduardo Ramos", 720, 0, 0, 0, 700, 20, "./IMG/pink1.jpg"),
+  new DadosFake("Gabriel Souza", 290, 0, 0, 0, 0, 0, "./IMG/brown1.jpg"),
+  new DadosFake("Lívia Martins", 1150, 0, 1000, 0, 150, 0, "./IMG/red3.jpg"),
+  new DadosFake("Pedro Almeida", 310, 10, 300, 0, 0, 0, "./IMG/pink2.jpg"),
+  new DadosFake("Juliana Castro", 2205, 2000, 200, 5, 0, 0, "./IMG/brown4.jpg"),
+  new DadosFake("Thiago Moreira", 260, 60, 0, 200, 0, 0, "./IMG/red1.jpg"),
+  new DadosFake("Sofia Barbosa", 330, 0, 300, 0, 0, 30, "./IMG/pink2.jpg"),
 ];
 
-// Transformando os dados em JSON (simulação)
+// Transformando os dados em JSON 
 const JsonDadosFake = JSON.stringify(pessoas);
 
-// Simulando um "fetch" com os dados locais
-const fakeFetch = new Promise((resolve) => {
-  setTimeout(() => {
-    resolve(JSON.parse(JsonDadosFake)); // Retorna os dados parseados como JSON
-  }); 
-});
-
-// Consumindo os dados simulados
+// Consumindo os dados diretamente do array 'pessoas'
 if (window.location.pathname.includes('Destaques.html')) {
+  console.log("Dados Recebidos", pessoas); // Exibe os dados no console
 
-fakeFetch
-  .then((data) => {
-    console.log("Dados Recebidos", data); // Exibe os dados no console
+  const telaDestaques = document.getElementById("tela-destaques"); // Seleciona o elemento onde os posts serão exibidos
 
-    const telaDestaques = document.getElementById("tela-destaques"); // Seleciona o elemento onde os posts serão exibidos
+  const top3 = pessoas.sort((a, b) => b.arvoresPlantadas - a.arvoresPlantadas).slice(0, 3);
 
-    const top3 = data.sort((a, b) => b.arvoresPlantadas - a.arvoresPlantadas).slice(0, 3);
-
-    top3.forEach((post) => {
-      telaDestaques.innerHTML += `
-        <div class="destaque-pessoa">
-          <div class="destaque-coluna1">
-            <img src="${post.imgUsuario}" alt="Imagem de uma árvore" id="tree-img-destaques">
-          </div>
-          <div class="destaque-coluna2">
-            <h1>${post.username}</h1>
-            <p>🌳 Árvores Plantadas: ${post.arvoresPlantadas}</p>
-          </div>
+  top3.forEach((post) => {
+    telaDestaques.innerHTML += `
+      <div class="destaque-pessoa">
+        <div class="destaque-coluna1">
+          <img src="${post.imgUsuario}" alt="Imagem de uma árvore" id="tree-img-destaques">
         </div>
-      `;
-    });
+        <div class="destaque-coluna2">
+          <h1>${post.username}</h1>
+          <p>🌳 Árvores Plantadas: ${post.arvoresPlantadas}</p>
+        </div>
+      </div>
+    `;
   });
 }
 
@@ -285,51 +278,55 @@ function atualizarFotoDePerfil() {
 
 // RELATORIOS
 
-// tela de relatorios exição de dados
-if (window.location.pathname.includes('Relatorios.html')) {
-  fakeFetch
-    .then((data) => {
-      console.log("Dados Recebidos", data); // Exibe os dados no console
+// Função para exibir os dados na lista
+const exibirDados = (dados) => {
+  const telaDestaques = document.getElementById("lista-relatorio");
+  telaDestaques.innerHTML = ""; // Limpa a lista
+  dados.forEach((post) => {
+    telaDestaques.innerHTML += `
+      <div class="destaque-pessoa">
+        <div class="destaque-coluna1">
+          <img src="${post.imgUsuario}" alt="Imagem de uma árvore" id="tree-img-destaques">
+        </div>
+        <div class="destaque-coluna2">
+          <h1>${post.username}</h1>
+          <p>🌳 Árvores Plantadas: ${post.arvoresPlantadas}</p>
+          <p>🌳 Ipês: ${post.ipes}</p>
+          <p>🌳 Angicos: ${post.angicos}</p>
+          <p>🌳 Aroeiras: ${post.aroeiras}</p>
+          <p>🌳 Jequitibás: ${post.jequitibas}</p>
+          <p>🌳 Peroba do Campo: ${post.perovaDoCampo}</p>
+        </div>
+      </div>
+    `;
+  });
+};
 
-      const telaDestaques = document.getElementById("lista-relatorio"); // Seleciona o elemento onde os posts serão exibidos
-      const searchInput = document.querySelector('input[type="search"]'); // Campo de busca
+// Exibe todos os dados inicialmente
+exibirDados(pessoas);
 
-      // Função para exibir os dados na lista
-      const exibirDados = (dados) => {
-        telaDestaques.innerHTML = ''; // Limpa a lista
-        dados.forEach((post) => {
-          telaDestaques.innerHTML += `
-            <div class="destaque-pessoa">
-              <div class="destaque-coluna1">
-                <img src="${post.imgUsuario}" alt="Imagem de uma árvore" id="tree-img-destaques">
-              </div>
-              <div class="destaque-coluna2">
-                <h1>${post.username}</h1>
-                <p>🌳 Árvores Plantadas: ${post.arvoresPlantadas}</p>
-              </div>
-            </div>
-          `;
-        });
-      };
-
-      // Exibe todos os dados inicialmente
-      exibirDados(data);
-
-      // Adiciona evento para filtrar os dados com base no campo de busca
-      searchInput.addEventListener('input', (e) => {
-        const searchValue = e.target.value.toLowerCase();
-
-        // Filtra os dados com base no valor pesquisado
-        const filteredData = data.filter(post => 
-          post.username.toLowerCase().includes(searchValue)
-        );
-
-        // Atualiza a lista com os dados filtrados
-        exibirDados(filteredData);
-      });
-    })
-    .catch((error) => {
-      console.error("Erro ao buscar dados:", error); // Exibe erros no console
-    });
+// Filtro por nome do usuário
+const userSearchInput = document.getElementById("user-search"); // Campo de busca por usuário
+if (userSearchInput) {
+  userSearchInput.addEventListener("input", (e) => {
+    const searchValue = e.target.value.toLowerCase();
+    const filteredData = pessoas.filter((post) =>
+      post.username.toLowerCase().includes(searchValue)
+    );
+    exibirDados(filteredData);
+  });
 }
 
+// Filtro por tipo de árvore
+const treeTypeSelect = document.getElementById("tree-type-search"); // Dropdown para filtro por tipo de árvore
+if (treeTypeSelect) {
+  treeTypeSelect.addEventListener("change", (e) => {
+    const selectedTreeType = e.target.value;
+    if (selectedTreeType) {
+      const filteredData = pessoas.filter((post) => post[selectedTreeType] > 0);
+      exibirDados(filteredData);
+    } else {
+      exibirDados(pessoas); // Exibe todos os dados se nenhum tipo for selecionado
+    }
+  });
+}
