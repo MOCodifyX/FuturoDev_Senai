@@ -1,0 +1,16 @@
+#bebidas {
+    scroll-margin-top: 100px; 
+}
+
+.item-bebida {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.item-bebida p {
+  margin: 0;
+}

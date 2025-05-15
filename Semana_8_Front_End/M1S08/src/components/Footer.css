@@ -1,0 +1,39 @@
+
+footer {
+  width: 100%; 
+  background-color: rgb(212, 212, 212); 
+  padding: 1rem 2rem; 
+  box-sizing: border-box; 
+  margin-top: 50px; 
+  margin-bottom: 0; 
+  position: relative; 
+}
+
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.footer-logo,
+.footer-contact {
+  flex: 1;
+  display: inline-block;
+  max-width: 300px;
+  margin: 15px;
+  text-align: center;
+}
+
+.footer-contact {
+  text-align: left;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}

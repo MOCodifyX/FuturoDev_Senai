@@ -1,0 +1,43 @@
+#inicio {
+  scroll-margin-top: 100px; 
+  display: flex; /* Divide a seção em duas partes: texto e imagem */
+  justify-content: center;
+  align-items: center; /* Alinha os itens verticalmente */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo */
+  font-family: Arial, sans-serif;
+  gap: 20px; /* Espaço entre as colunas (texto e imagem) */
+  padding-top: 70px;
+}
+
+#text-container {
+  display: flex;
+  flex-direction: column; /* Coloca o <h1> acima do <h2> */
+  max-width: 50%; /* Define largura máxima para o texto */
+}
+
+#text-container h1 {
+  font-size: 2.5rem;
+  margin: 0; /* Remove margens padrão */
+  color: #333;
+}
+
+#text-container h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 10px; /* Espaçamento entre o <h1> e o <h2> */
+}
+
+#image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 45%; /* Define largura máxima para o contêiner da imagem */
+}
+
+#image-container img {
+  max-width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+  max-height: 80%; /* Limita a altura máxima da imagem */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra à imagem */
+}

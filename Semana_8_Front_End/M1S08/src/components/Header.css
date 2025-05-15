@@ -1,0 +1,84 @@
+#header {
+  display: flex; /* Layout flexível para alinhamento */
+  justify-content: space-between; /* Espaço entre o título e o menu */
+  align-items: center; /* Centraliza os itens verticalmente */
+  position: fixed; /* Fixa o header no topo da tela */
+  top: 0; /* Posiciona no topo */
+  left: 0; /* Alinha à esquerda */
+  width: 100%; /* Faz o header ocupar toda a largura */
+  background-color: white; /* Cor de fundo */
+  padding: 1rem 2rem; /* Espaçamento interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  z-index: 1000; /* Garante que o header fique acima de outros elementos */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho */
+}
+
+/* Estilo para o título */
+#header h1 {
+  margin: 0; /* Remove margens padrão */
+  font-size: 1.5rem; /* Tamanho da fonte do título */
+  color: #333; /* Cor do texto */
+  white-space: nowrap; /* Impede que o texto quebre */
+}
+
+/* Estilo para a navegação */
+#header nav ul {
+  list-style: none; /* Remove marcadores da lista padrão */
+  display: flex; /* Alinha os itens horizontalmente */
+  gap: 1rem; /* Espaçamento entre os itens do menu */
+  margin: 0; /* Remove margem padrão */
+  padding: 0; /* Remove padding padrão */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas pequenas */
+}
+
+/* Estilo para os links */
+#header nav ul li a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #007BFF; /* Cor azul para os links */
+  font-size: 1rem; /* Tamanho da fonte dos links */
+  transition: color 0.2s; /* Transição suave para cor ao passar o mouse */
+  white-space: nowrap; /* Evita quebra de texto */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+#header nav ul li a:hover {
+  color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+
+/*RESPONSIVIDADE* MEDIO*/
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column; 
+    padding: 1rem;
+  }
+
+  #header nav ul {
+    justify-content: center; 
+    gap: 0.5rem; 
+  } /* <- Fechando a chave aqui */
+
+  #header h1 {
+    margin-bottom: 1rem; 
+    text-align: center; 
+  }
+}
+
+/*RESPONSIVIDADE* PEQUENO*/
+@media (max-width: 480px) {
+  #header {
+    padding: 0.5rem; 
+  }
+
+  #header h1 {
+    font-size: 1.2rem; 
+  }
+
+  #header nav ul {
+    gap: 0.3rem; 
+  }
+
+  #header nav ul li a {
+    font-size: 0.9rem; 
+  }
+}
