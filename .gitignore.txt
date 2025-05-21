@@ -1,0 +1,32 @@
+# Pasta de configurações pessoais do VS Code
+.vscode/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+
+# Arquivos de backup do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos do Git relacionados a conflitos
+*.orig
+
+# Ignorar dependências do Maven e Gradle
+target/
+out/
+*.jar
+*.war
+*.ear
+
+# Ignorar dependências do IntelliJ IDEA e Eclipse (caso use)
+.idea/
+*.iml
+*.class
+*.project
+*.settings/
+*.factorypath
+
+# Ignorar credenciais (caso use arquivos com senhas temporárias)
+*.env
+*.config.json
