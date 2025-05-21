@@ -1,84 +1,76 @@
-# 🚀 MiniProjeto 1 - Semana MS07 Curso **FuturoDev** - SENAI
+# 🚀 Exercícios Semana 9 do Curso **FuturoDev** - SENAI
 
-Este repositório contém o Primeiro MiniProjeto do curso **FuturoDev** do **SENAI**.
+Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 
----
+Link para o resultado final da junção das atividades 1 até 5:
+🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_9_Front_End/Exercises/)** 
 
-Estaremos desenvolvendo nosso mini-projeto front-end.
+Link para o resultado final da atividades 6:
+🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_9_Front_End/Exercises/)** 
 
-Já entendemos conteúdos básicos e avançados de HTML, CSS e JavaScript e, com base nesses conhecimentos, criaremos a interface para uma aplicação de Reflorestamento. Nosso foco principal é a interface visual, logo não lidaremos, nesse momento, com persistências de dados no back-end e/ou banco de dados.
-Poderão ser usados dados fakes para testar a aplicação e suas funcionalidades; isso, fica de acordo com a necessidade de cada desenvolvedor.
-Os projetos tentam simular, o mais fielmente, um ambiente de desenvolvimento, incentivando a autonomia na tomada de decisões. Serão apresentadas especificações de regras de negócio e somente teremos especificações técnicas quando as mesmas foram imprescindíveis para as regras do negócio (aplicação).
-
----
-
-Link para o resultado final da junção das atividades
-
-🔗 **[👉 Visualizar MiniProjeto](https://mocodifyx.github.io/FuturoDev_Senai/Semana_7_Front_End/MiniProjeto/)** 
-
-🔗 **[👉 Visualizar Video de Defesa do MiniProjeto](https://mocodifyx.github.io/FuturoDev_Senai/Semana_7_Front_End/VideoDefesaMiniProjeto/)**
+// TROCAR O LINK PARA O CORRETO //
 
 ---
 
-## 🔐 **[M1S07] MiniProjeto: Cadastro de usuário**
+## 📎 **Exercise 1 - Gerenciador de tarefas: Adição de tarefas**
 📌 **Descrição:**  
 
-Ao entrar na aplicação, o usuário deve fazer o cadastro de seus dados, cadastrando usuário e senha, escolhendo uma das três árvores que deverão serão disponibilizadas de avatar de reflorestamento; são elas: o Pau-Brasil, a Castanheira e a Peroba-Rosa.
+Estaremos desenvolvendo uma página de gestão de tarefas diárias. Essas tarefas deverão possuir:
 
-Ao escolher um dessas árvores, o estilo de exibição de todas as páginas devem ficar com a cor principal da árvore: o Pau-Brasil com um tom de vermelho; a Castanheira com um tom de marrom e, a Peroba-Rosa, com um tom de cor de rosa.
+- Campo de descritivo;
+- Seletor de período (Manhã/Tarde/Noite);
+- Status de tarefa concluída.
 
-Nota técnica: Para o cadastro, deixe pronto o objeto de usuário em Json, para, posteriomente, ser enviado para o back-end. É interessante salvar o modo do usuário utilizador no localStorage.
-
----
-
-## 🧭 **[M1S07] MiniProjeto: Navegação**
-📌 **Descrição:**  
-
-Temos a necessidade de criar um menu de navegação ao início das seguintes páginas html: cadastro de ações de reflorestamento, perfil de usuário, relatório e destaques.
-
-O menu deve conter todas essas opções e enviar o usuário para a tela em questão.
+Sua primeira missão é criar o componente para adição de uma nova tarefa, onde teremos a escolha do descritivo, a opção de período e um botão de adição. A nova tarefa deve ser adicionada ao Array de tarefas do componente principal (componente Tarefas).
 
 ---
 
-## 🏅 **[M1S07] MiniProjeto: Destaques**
+## 🖼️ **Exercise 2 - Gerenciador de tarefas: Exibição de tarefas**
 📌 **Descrição:**  
 
-Aqui, faremos uma página simples com os 3 (usuários) destaques em reflorestamento. Será exibido somente o avatar e o nome dos 3 usuários que tiverem mais contribuído com o reflorestamento; não existirá exibição de posição.
+As tarefas devem ser exibidas em 3 colunas (cada uma para um período) abaixo do componente de adição (no componente principal).
 
-Nota técnica: Use uma coleção do objeto de usuário para teste, preencha totalmente com dados ficticios.
+Basicamente, trata-se da listagem das tarefas e também se deve mostrar a quantidade de tarefas que foram concluídas.
 
 ---
 
-## 🖼️ **[M1S07] MiniProjeto: Perfil de usuário**
+## 😋 **Exercise 3 - Gerenciador de tarefas: Tarefas concluídas**
 📌 **Descrição:**  
 
-Cada usuário poderá acessar uma tela que mostrará seu perfil, com suas informações. Aqui, o usuário só poderá alterar sua BIO e nada a mais.
+Cada item da nossa lista deve ter um checkbox de tarefa concluída; se a tarefa estiver concluída: a descrição da mesma deve estar em um tom de cinza claro e taxado.
+---
 
-Nesse perfil, também teremos a exibição de sua participação como reflorestador, que é a exibição de quantas árvores que o mesmo plantou (sem distinção de tipo).
-Um artificio interessante que foi solicitado é que não teremos upload de imagem para foto de avatar; os avatares de todos os usuárioa são fixos e é uma das três arvores que escolheram durante a fase de cadastro de seus perfis.
+## 🍝 **Exercise 4 - Gerenciador de tarefas: Barra de progresso**
+📌 **Descrição:**  
 
-Essa imagem muda confome a quantidade de árvores plantadas (100, 300, 700 e 1500+), basicamente, são estágios de crescimento dessa árvore (plantada, broto, jovem e madura).
+O próximo passo é a criação de um componente de percentual de conclusão. Esse componente deverá receber, no mínimo, 2 props, que são para o total de tarefas e o total de tarefas concluídas...
 
-Nota técnica: Use um objeto de usuário fake para testar essa tela.
+Com esses dois dados podemos fazer o cálculo de percentual de conclusão.
+
+Cálculo: const progresso = (tarefasCompletas / totalTarefas) * 100
 
 ---
 
-## 🌳 **[M1S07] MiniProjeto: Cadastro de ações de reflorestamento**
+## 🍹 **Exercise 5 - Gerenciador de tarefas: Persistencia de dados**
 📌 **Descrição:**  
 
-Precisamos de uma tela em que o usuário poderá realizar o cadastro de suas ações de reflorestamento.
+Faremos uma sessão de bebidas., Nela teremos categorias:
 
-Para essa tela, teremos a quantidade de árvores plantadas e qual sua espécie entre as que estão cadastradas no projeto (Ipês, Angicos, Aroeiras, Jequitibás e Peroba do campo).
+Para a persistência de dados use o localStorage e seu conhecimento em json.
 
-Nota técnica: Para o cadastro deixe pronto o objeto do novo registro de reflorestamento em Json, para posteriomente ser enviado para o back-end, como não possuímos uma conexão com o banco podemos deixar o campo de usuário vazio, mas ele precisa existir.
+Você deve sempre salvar alguma alteração nas tarefas (status ou nova tarefa) no localStorage e, quando a aplicação for iniciada, deve buscar possíveis tarefas que existam no mesmo.
+
+Para o gerenciamento do localStorage, aconselho a utilização do useEfect.
 
 ---
 
-## 🧾 **[M1S07] MiniProjeto: Relatório**
+## ✨ **Exercise 6 - Cronômetro**
 📌 **Descrição:**  
 
-Precisaremos de uma tela de relatório. Será basicamente uma busca nos registros de reflorestamento (que já fizemos a tela de cadastro). A busca deve ter o campo usuário e tipo de árvore, com um dos campos preenchidos (ou os dois) deve ser exibido em tela o resultado da busca em tela.
+Esse exercício é a entrega de uma atividade em Squads feita na  aula 2 da semana 9.
 
-Nota técnica: Use uma coleção do objeto usado para o registro de reflorestamento para teste, preencha totalmente com dados ficticios.
+O enunciado será apresentado em sala no dia da aula e terão tempo para desenvolvê-lo em Aula.
+
+Entrega deste exercício deve ser feita obrigatoriamente via link do github e seguindo as orientações passadas em sala.
 
 ---
