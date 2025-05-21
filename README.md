@@ -242,3 +242,153 @@ Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 </details>
 
 ---
+
+## 📝 **Semanana 7**
+ 📌[Material de Apoio(PDF)](PDF_Aulas/M1S07.pdf)
+
+<details>
+  <summary><strong>Aula 1 - 21/04/25 </strong></summary>
+
+  *Nesta aula, aprendemos os seguintes tópicos:*
+  
+- POO
+- O que é POO?
+- Classes
+- Objetos
+- Herança
+
+</details>
+<details>
+  <summary><strong>Aula 2 - 23/04/25 </strong></summary>
+
+  *Nesta aula, aprendemos os seguintes tópicos:*
+  
+- Json
+- Fetch
+
+</details>
+<details>
+  <summary><strong>Aula 3 - 25/04/25 </strong></summary>
+
+   *Nesta aula, aprendemos os seguintes tópicos:*
+
+- Branch
+- Giflow
+- Plugins
+  
+</details>
+
+---
+
+## 📝 **Semanana 8**
+ 📌[Material de Apoio(PDF)](PDF_Aulas/M1S08.pdf)
+
+<details>
+  <summary><strong>Aula 1 - 05/05/25 </strong></summary>
+
+  *Nesta aula, aprendemos os seguintes tópicos:*
+  
+- O que é React?
+- Preparação de ambiente
+- Componente Funcionais e reutilizáveis
+- JSX
+
+</details>
+<details>
+  <summary><strong>Aula 2 - 07/05/25 </strong></summary>
+
+  *Nesta aula, aprendemos os seguintes tópicos:*
+  
+- Props
+- Tipagem de dados
+- PropTypes
+   - TypeScript
+   - Ciclo de vida de componentes
+- Fluxo de dados
+
+
+</details>
+<details>
+  <summary><strong>Aula 3 - 09/05/25 </strong></summary>
+
+   *Nesta aula, aprendemos os seguintes tópicos:*
+
+- Revisão Teórica
+- Atividade de treino
+- Vamos codar!
+
+</details>
+
+---
+
+## 📝 **Semanana 9**
+ 📌[Material de Apoio(PDF)](PDF_Aulas/M1S09.pdf)
+
+<details>
+  <summary><strong>Aula 1 - 12/05/25 </strong></summary>
+
+  *Nesta aula, aprendemos os seguintes tópicos:*
+  
+- O que são Hooks?
+- useState
+- Efeitos colaterais
+
+</details>
+<details>
+  <summary><strong>Aula 2 - 14/05/25 </strong></summary>
+
+  *Nesta aula, aprendemos os seguintes tópicos:*
+  
+- useEfect
+- Exercício em Squads
+
+</details>
+<details>
+  <summary><strong>Aula 3 - 16/05/25 </strong></summary>
+
+   *Nesta aula, aprendemos os seguintes tópicos:*
+
+- Componentes controlados
+- Componentes não controlados
+- Hooks customizados
+- Revisão
+
+</details>
+
+---
+
+## 📝 **Semanana 10**
+ 📌[Material de Apoio(PDF)](PDF_Aulas/M1S10.pdf)
+
+<details>
+  <summary><strong>Aula 1 - 19/05/25 </strong></summary>
+
+  *Nesta aula, aprendemos os seguintes tópicos:*
+  
+- Atomic Design
+
+</details>
+<details>
+  <summary><strong>Aula 2 - 21/05/25 </strong></summary>
+
+  *Nesta aula, aprendemos os seguintes tópicos:*
+  
+- Finalização Atomic Design
+- CSS Modules
+- Uso de bibliotecas externas
+- Material UI
+
+</details>
+<details>
+  <summary><strong>Aula 3 - 23/05/25 </strong></summary>
+
+   *Nesta aula, aprendemos os seguintes tópicos:*
+
+- Responsividade
+- Media Queries
+- useMediaQuery
+- Revisão
+
+</details>
+
+---
