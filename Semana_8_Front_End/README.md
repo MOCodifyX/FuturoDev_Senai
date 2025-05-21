@@ -1,84 +1,97 @@
-# 🚀 MiniProjeto 1 - Semana MS07 Curso **FuturoDev** - SENAI
+# 🚀 Exercícios Semana 8 do Curso **FuturoDev** - SENAI
 
-Este repositório contém o Primeiro MiniProjeto do curso **FuturoDev** do **SENAI**.
-
----
-
-Estaremos desenvolvendo nosso mini-projeto front-end.
-
-Já entendemos conteúdos básicos e avançados de HTML, CSS e JavaScript e, com base nesses conhecimentos, criaremos a interface para uma aplicação de Reflorestamento. Nosso foco principal é a interface visual, logo não lidaremos, nesse momento, com persistências de dados no back-end e/ou banco de dados.
-Poderão ser usados dados fakes para testar a aplicação e suas funcionalidades; isso, fica de acordo com a necessidade de cada desenvolvedor.
-Os projetos tentam simular, o mais fielmente, um ambiente de desenvolvimento, incentivando a autonomia na tomada de decisões. Serão apresentadas especificações de regras de negócio e somente teremos especificações técnicas quando as mesmas foram imprescindíveis para as regras do negócio (aplicação).
-
----
+Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 
 Link para o resultado final da junção das atividades
+🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_8_Front_End/Exercises/)** 
 
-🔗 **[👉 Visualizar MiniProjeto](https://mocodifyx.github.io/FuturoDev_Senai/Semana_7_Front_End/MiniProjeto/)** 
-
-🔗 **[👉 Visualizar Video de Defesa do MiniProjeto](https://mocodifyx.github.io/FuturoDev_Senai/Semana_7_Front_End/VideoDefesaMiniProjeto/)**
-
----
-
-## 🔐 **[M1S07] MiniProjeto: Cadastro de usuário**
-📌 **Descrição:**  
-
-Ao entrar na aplicação, o usuário deve fazer o cadastro de seus dados, cadastrando usuário e senha, escolhendo uma das três árvores que deverão serão disponibilizadas de avatar de reflorestamento; são elas: o Pau-Brasil, a Castanheira e a Peroba-Rosa.
-
-Ao escolher um dessas árvores, o estilo de exibição de todas as páginas devem ficar com a cor principal da árvore: o Pau-Brasil com um tom de vermelho; a Castanheira com um tom de marrom e, a Peroba-Rosa, com um tom de cor de rosa.
-
-Nota técnica: Para o cadastro, deixe pronto o objeto de usuário em Json, para, posteriomente, ser enviado para o back-end. É interessante salvar o modo do usuário utilizador no localStorage.
+// TROCAR O LINK PARA O CORRETO //
 
 ---
 
-## 🧭 **[M1S07] MiniProjeto: Navegação**
+## 📎 **Exercise 1 - Cardápio Digital: Menu**
 📌 **Descrição:**  
 
-Temos a necessidade de criar um menu de navegação ao início das seguintes páginas html: cadastro de ações de reflorestamento, perfil de usuário, relatório e destaques.
+Nossa missão, agora, é a criação de um menu para uma página de cardápio digital. Usaremos a componentização do React para isso. Nosso menu deve ter o nome do restaurante (Mamamia Massas) e, as opções de menu:
 
-O menu deve conter todas essas opções e enviar o usuário para a tela em questão.
+- Início
+- Gnocchi
+- Pastas
+- Bedidas
 
 ---
 
-## 🏅 **[M1S07] MiniProjeto: Destaques**
+## 🖼️ **Exercise 2 - Cardápio Digital: Tela de Apresentação**
 📌 **Descrição:**  
 
-Aqui, faremos uma página simples com os 3 (usuários) destaques em reflorestamento. Será exibido somente o avatar e o nome dos 3 usuários que tiverem mais contribuído com o reflorestamento; não existirá exibição de posição.
-
-Nota técnica: Use uma coleção do objeto de usuário para teste, preencha totalmente com dados ficticios.
+Neste componente, termos a tela dividida em dois espaços: na esqueda, teremos a frase "Servindo massas à mais de 70 anos" e, uma subfrase "qualidade passada por gerações"; e, a direita, uma imagem da fachada do restaurante (use uma imagem ficticia).
 
 ---
 
-## 🖼️ **[M1S07] MiniProjeto: Perfil de usuário**
+## 😋 **Exercise 3 - Cardápio Digital: Gnocchi**
 📌 **Descrição:**  
 
-Cada usuário poderá acessar uma tela que mostrará seu perfil, com suas informações. Aqui, o usuário só poderá alterar sua BIO e nada a mais.
+Nessa parte, teremos dois componentes que fazem parte do Gnocchi, o próprio componente para mostrar as opções de Gnocchis com seus valores e os molhos.
+No componente de Gnocchi teremos 4 opções:
 
-Nesse perfil, também teremos a exibição de sua participação como reflorestador, que é a exibição de quantas árvores que o mesmo plantou (sem distinção de tipo).
-Um artificio interessante que foi solicitado é que não teremos upload de imagem para foto de avatar; os avatares de todos os usuárioa são fixos e é uma das três arvores que escolheram durante a fase de cadastro de seus perfis.
+- Gnocchi de Batata
+- Gnocchi de espinafre
+- nocchi de cenoura
+- Gnocchi de beterraba
 
-Essa imagem muda confome a quantidade de árvores plantadas (100, 300, 700 e 1500+), basicamente, são estágios de crescimento dessa árvore (plantada, broto, jovem e madura).
+Cada um deles deve ter seu nome, valor e uma imagem ilustrativa; eles devem ser exibidos em formato de Cards exibindo em colunas de 2 a 2.
 
-Nota técnica: Use um objeto de usuário fake para testar essa tela.
+Já o componente de molhos terá a exibição em forma de uma lista não ordenada e serão as seguintes opções:
+
+- Alla Puttanesca
+- Al Pesto di Basilico
+- Cacio e Pepe
+- Alla Matriciana
 
 ---
 
-## 🌳 **[M1S07] MiniProjeto: Cadastro de ações de reflorestamento**
+## 🍝 **Exercise 4 - Cardápio Digital: Pastas**
 📌 **Descrição:**  
 
-Precisamos de uma tela em que o usuário poderá realizar o cadastro de suas ações de reflorestamento.
+Na opção de pastas, teremos o mesmo modelo de exibição em Cards que o Gnocchi, mas, a regra aqui, é que obrigatoriamente temos a exibição de 3 massas. A cada linha de exibição destes produtos, mostrando seu nome, ilustração, valor e molhos permitidos:
 
-Para essa tela, teremos a quantidade de árvores plantadas e qual sua espécie entre as que estão cadastradas no projeto (Ipês, Angicos, Aroeiras, Jequitibás e Peroba do campo).
+- Espaguete: Alla Puttanesca, Al Pesto di Basilico, Cacio e Pepe, Alla Matriciana;
+- Tagliatelle: Alla Puttanesca, Alla Matriciana;
+- Fettuccine: Alla Puttanesca, Al Pesto di Basilico, Cacio e Pepe;
+- Penne: Alla Puttanesca, Cacio e Pepe;
+- Rigatoni: Alla Matriciana;
+- Pappardelle: Alla Puttanesca, Alla Matriciana.
 
-Nota técnica: Para o cadastro deixe pronto o objeto do novo registro de reflorestamento em Json, para posteriomente ser enviado para o back-end, como não possuímos uma conexão com o banco podemos deixar o campo de usuário vazio, mas ele precisa existir.
+Interessante que, nas opções de molhos, iremos usar o componente de molhos para a integração.
 
 ---
 
-## 🧾 **[M1S07] MiniProjeto: Relatório**
+## 🍹 **Exercise 5 - Cardápio Digital: Bebidas**
 📌 **Descrição:**  
 
-Precisaremos de uma tela de relatório. Será basicamente uma busca nos registros de reflorestamento (que já fizemos a tela de cadastro). A busca deve ter o campo usuário e tipo de árvore, com um dos campos preenchidos (ou os dois) deve ser exibido em tela o resultado da busca em tela.
+Faremos uma sessão de bebidas., Nela teremos categorias:
 
-Nota técnica: Use uma coleção do objeto usado para o registro de reflorestamento para teste, preencha totalmente com dados ficticios.
+- Água
+- Refrigerante
+- Coca-Cola
+- Guarana
+- Sprite
+- Sucos
+- Morango
+- Laranja
+- Uva
+
+Não esqueça de colocar os valores.
+
+---
+
+## ✨ **Exercise 6 - Cardápio Digital: Finalização do Cardápio**
+📌 **Descrição:**  
+
+Crie um rodapé para o cardápio com os icones de redes sociais e um endereço fictio.
+
+E, após isso, integre todos os componentes a um componente Cardápio e o exiba no nosso arquivo app.tsx.
+
+Não esqueça de fazer a validação de tipagem em todos os componentes, se necessário.
 
 ---
