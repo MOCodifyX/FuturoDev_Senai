@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { TarefaType } from "../App";
 
 interface Props {
-  setTarefa: (tarefa: TarefaType) => void;
+  setTarefa: (tarefa: Omit<TarefaType, 'id' | 'concluida'>) => void;
 }
 
 function NovaTarefa({ setTarefa }: Props) {
@@ -26,7 +26,6 @@ function NovaTarefa({ setTarefa }: Props) {
     setTarefa({
       descricao,
       turnos: [turnoSelecionado], 
-      concluida: false,
     });
 
     setDescricao("");

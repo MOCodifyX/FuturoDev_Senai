@@ -4,7 +4,7 @@ import type { TarefaType } from "../App";
 
 interface Props {
   tarefas: TarefaType[];
-  toggleConcluida: (index: number) => void;
+  toggleConcluida: (id: string) => void;
 }
 
 function Tarefa({ tarefas, toggleConcluida }: Props) {
@@ -16,11 +16,10 @@ function Tarefa({ tarefas, toggleConcluida }: Props) {
           .filter(t => t.turnos.includes("Manhã"))
            .map(t => {
           
-            const index = tarefas.indexOf(t);
             return (
-              <div key={index} className="tarefa-item">
+              <div key={t.id} className="tarefa-item">
                 <p>{t.descricao}</p>
-                <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(index)}/>
+                <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(t.id)}/>
               </div>
             );
           })}
@@ -31,11 +30,11 @@ function Tarefa({ tarefas, toggleConcluida }: Props) {
         {tarefas
           .filter(t => t.turnos.includes("Tarde"))
            .map(t => {
-            const index = tarefas.indexOf(t);
+
             return (
-              <div key={index} className="tarefa-item">
+              <div key={t.id} className="tarefa-item">
                 <p>{t.descricao}</p>
-                <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(index)}/>
+                <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(t.id)}/>
               </div>
             );
           })}
@@ -46,11 +45,11 @@ function Tarefa({ tarefas, toggleConcluida }: Props) {
         {tarefas
           .filter(t => t.turnos.includes("Noite"))
            .map(t => {
-            const index = tarefas.indexOf(t);
+
             return (
-              <div key={index} className="tarefa-item">
+              <div key={t.id} className="tarefa-item">
                 <p className="tarefa-descricao">{t.descricao}</p>
-                <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(index)}/>
+                <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(t.id)}/>
               </div>
             );
           })}

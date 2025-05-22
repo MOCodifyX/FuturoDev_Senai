@@ -1,10 +1,11 @@
 import './App.css'
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import NovaTarefa from "./components/NovaTarefa";
 import Tarefa from "./components/Tarefas";
 
 export type TarefaType = {
+  id: string;
   descricao: string;
   turnos: string[];
   concluida:boolean;
@@ -12,22 +13,40 @@ export type TarefaType = {
 
 function App() {
   const [tarefas, setTarefas] = useState<TarefaType[]>([]);
+  const isFirstLoad = useRef(true);
 
-  const adicionarTarefa = (novaTarefa: TarefaType) => {
-    setTarefas(prev => [...prev, { ...novaTarefa, concluida: false }]);
-  };
+  useEffect(() => {
+    console.log("→ Carregando tarefas:", localStorage.getItem("tarefas"));
+    const tarefasSalvas = localStorage.getItem("tarefas");
+    if (tarefasSalvas) {
+      setTarefas(JSON.parse(tarefasSalvas));
+    }
+  }, []);
 
-  const toggleConcluida = (index: number) => {
-    setTarefas(prev =>
-      prev.map((t, i) =>
-        i === index ? { ...t, concluida: !t.concluida } : t
-      )
-    )
+  useEffect(() => {
+    if (isFirstLoad.current) {
+      isFirstLoad.current = false;
+      return;
+    }
+    console.log("→ Salvando tarefas:", tarefas);
+    localStorage.setItem("tarefas", JSON.stringify(tarefas));
+  }, [tarefas]);
+
+  const adicionarTarefa = (novaTarefa: Omit<TarefaType, 'id' | 'concluida'>) => {
+    setTarefas(prev => [...prev, { ...novaTarefa, id: crypto.randomUUID(), concluida: false }]);
   };
 
   const total = tarefas.length;
   const concluidas = tarefas.filter(t => t.concluida).length;
   const porcentagem = total === 0 ? 0 : Math.round((concluidas / total) * 100);
+
+  const toggleConcluida = (id: string) => {
+    setTarefas(prev =>
+      prev.map(t =>
+        t.id === id ? { ...t, concluida: !t.concluida } : t
+      )
+    );
+  };
 
   return (
     <>
