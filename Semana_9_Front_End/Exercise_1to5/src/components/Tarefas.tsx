@@ -17,8 +17,8 @@ function Tarefa({ tarefas, toggleConcluida }: Props) {
            .map(t => {
           
             return (
-              <div key={t.id} className="tarefa-item">
-                <p>{t.descricao}</p>
+              <div key={t.id} className={`tarefa-item ${t.concluida ? 'concluida' : ''}`}>
+                <p className="tarefa-descricao">{t.descricao}</p>
                 <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(t.id)}/>
               </div>
             );
@@ -32,8 +32,8 @@ function Tarefa({ tarefas, toggleConcluida }: Props) {
            .map(t => {
 
             return (
-              <div key={t.id} className="tarefa-item">
-                <p>{t.descricao}</p>
+              <div key={t.id} className={`tarefa-item ${t.concluida ? 'concluida' : ''}`}>
+                <p className="tarefa-descricao">{t.descricao}</p>
                 <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(t.id)}/>
               </div>
             );
@@ -47,7 +47,7 @@ function Tarefa({ tarefas, toggleConcluida }: Props) {
            .map(t => {
 
             return (
-              <div key={t.id} className="tarefa-item">
+              <div key={t.id} className={`tarefa-item ${t.concluida ? 'concluida' : ''}`}>
                 <p className="tarefa-descricao">{t.descricao}</p>
                 <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(t.id)}/>
               </div>
