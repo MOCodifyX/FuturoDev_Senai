@@ -1,0 +1,42 @@
+#tela-tarefas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#manha, #tarde, #noite {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 300px; 
+  box-sizing: border-box;
+}
+
+.tarefa-item {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-break: break-word;
+}
+
+.tarefa-item input[type="checkbox"] {
+  margin-left: 1rem;
+}
+
+.tarefa-descricao {
+  margin: 0;
+  flex: 1;
+  padding-right: 0.5rem;
+}
+
+

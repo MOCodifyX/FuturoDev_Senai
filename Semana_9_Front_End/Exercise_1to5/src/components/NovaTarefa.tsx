@@ -1,3 +1,5 @@
+import './NovaTarefa.css'
+
 import { useState } from "react";
 import type { TarefaType } from "../App";
 
@@ -75,6 +77,7 @@ function NovaTarefa({ setTarefa }: Props) {
         </label>
 
         <button type="submit">Adicionar Nova Tarefa</button>
+        
       </form>
     </section>
   );

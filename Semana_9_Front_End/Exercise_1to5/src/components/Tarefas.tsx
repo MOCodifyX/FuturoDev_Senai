@@ -1,3 +1,5 @@
+import './Tarefas.css'
+
 import type { TarefaType } from "../App";
 
 interface Props {
@@ -10,12 +12,13 @@ function Tarefa({ tarefas, toggleConcluida }: Props) {
     <section id="tela-tarefas">
       <div id="manha">
         <h2>Manhã</h2>
-        {tarefas
+        {tarefas 
           .filter(t => t.turnos.includes("Manhã"))
            .map(t => {
+          
             const index = tarefas.indexOf(t);
             return (
-              <div key={index}>
+              <div key={index} className="tarefa-item">
                 <p>{t.descricao}</p>
                 <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(index)}/>
               </div>
@@ -30,7 +33,7 @@ function Tarefa({ tarefas, toggleConcluida }: Props) {
            .map(t => {
             const index = tarefas.indexOf(t);
             return (
-              <div key={index}>
+              <div key={index} className="tarefa-item">
                 <p>{t.descricao}</p>
                 <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(index)}/>
               </div>
@@ -45,8 +48,8 @@ function Tarefa({ tarefas, toggleConcluida }: Props) {
            .map(t => {
             const index = tarefas.indexOf(t);
             return (
-              <div key={index}>
-                <p>{t.descricao}</p>
+              <div key={index} className="tarefa-item">
+                <p className="tarefa-descricao">{t.descricao}</p>
                 <input type="checkbox" checked={t.concluida} onChange={() => toggleConcluida(index)}/>
               </div>
             );
