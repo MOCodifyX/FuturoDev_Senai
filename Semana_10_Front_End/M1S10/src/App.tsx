@@ -1,33 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useState } from 'react'
+
+import { PlantStore } from './pages/PlantStore'
+import { Button, createTheme, CssBaseline, ThemeProvider } from '@mui/material'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
+//botao de troca de Tema
+
+  const [isDark, setIsDark] = useState(false)
+
+  const theme = createTheme({
+    palette: {
+      mode: isDark ? 'dark' : 'light',
+      background: {
+        default: isDark ? '#1a2d22' : '#e7f3ea',
+        paper: isDark ? '#12351f' : '#cfe8d5'
+      },
+      primary: {
+        main: isDark ? '#81c784' : '#4f7c5a'
+      },
+      text: {
+        primary: isDark ? '#ffffff' : '#2d3b2e',
+        secondary: isDark ? '#a5d6a7' : '#6b8f71'
+      }
+    }
+  });
 
   return (
+
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+
+      <div className="p-4 text-center">
+        <Button variant="contained" onClick={() => setIsDark(!isDark)}>
+          Trocar Tema
+        </Button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <PlantStore />
+    </ThemeProvider>
+
     </>
   )
 }

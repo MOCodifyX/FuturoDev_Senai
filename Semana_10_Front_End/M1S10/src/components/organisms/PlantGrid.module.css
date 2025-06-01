@@ -1,0 +1,7 @@
+.plant-grid {
+    display: grid;
+     gap: 1rem;
+     padding: 1rem;
+    border: 1px solid rgb(38, 85, 0); 
+     border-radius: 10px;
+}

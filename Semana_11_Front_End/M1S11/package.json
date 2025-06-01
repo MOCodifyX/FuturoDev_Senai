@@ -1,5 +1,5 @@
 {
-  "name": "m1s10",
+  "name": "m1s11",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,8 +14,11 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.1.0",
     "@mui/material": "^7.1.0",
+    "modern-css-reset": "^1.4.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.56.4",
+    "react-router-dom": "^7.6.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
