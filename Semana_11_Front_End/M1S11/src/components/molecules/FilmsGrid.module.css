@@ -1,0 +1,26 @@
+.filmsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.filmsGrid img {
+    background-image: cover;
+    border: 3px solid #ffffff;
+    max-width: 200px;
+    height: 300px;     
+    border-radius: 8px; 
+}
+
+@media (max-width: 768px) {
+  .filmsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .filmsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

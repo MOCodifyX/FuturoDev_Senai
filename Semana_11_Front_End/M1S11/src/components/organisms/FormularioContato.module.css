@@ -1,0 +1,52 @@
+.form {
+  max-width: 400px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: inherit; 
+}
+
+input,
+textarea,
+.button {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input,
+textarea {
+  padding: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.button {
+  padding: 10px;
+  background-color: #422d2d;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #341f1f;
+}
+
+.error {
+  color: #d93025;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+
+

@@ -1,3 +1,4 @@
+import styles from './FilmsCard.module.css';
 
 import { Button } from "../atoms/Button";
 
@@ -7,21 +8,21 @@ type FilmsCardProps = {
     image: string;
     gender: string;
     age: number;
-    SeeDetails: () => void; 
+    onSeeDetails: () => void; 
 };
 
-export const FilmsCard = ({ id, name, image, gender, age, SeeDetails }: FilmsCardProps) => {
+export const FilmsCard = ({ name, image, gender, age, onSeeDetails }: FilmsCardProps) => {
 
   return (
 
-    <div className={styles['plant-card']}>
+    <div className={styles.filmsCard}>
 
         <h2>{name}</h2>
         <img src={`/img/${image}`} alt={`Capa do filme ${name}`} />
         <p>Genero do Filme: {gender}</p>
         <p>Idade Indicada: {age}</p>
 
-        <Button onClick={SeeDetails}> Ler Sinopse </Button>
+        <Button text="Ler Sinopse" onClick={onSeeDetails} />
 
     </div>
 
