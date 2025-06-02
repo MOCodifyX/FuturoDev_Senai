@@ -40,3 +40,31 @@
 .read-the-docs {
   color: #888;
 }
+
+:root {
+  --background-light: #ffffff;
+  --text-light: #222222;
+
+  --background-dark: #121212;
+  --text-dark: #eeeeee;
+}
+
+.light-theme {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+.dark-theme {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.light-theme button {
+  background-color: #01001b; 
+  color: white;
+}
+
+.dark-theme button {
+  background-color: #ccc; 
+  color: #222;
+}

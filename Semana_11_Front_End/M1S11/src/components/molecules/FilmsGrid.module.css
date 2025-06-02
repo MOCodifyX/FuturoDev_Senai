@@ -19,6 +19,10 @@
   }
 }
 
+button {
+    transition: background-color 0.3s ease;
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .filmsGrid {
     grid-template-columns: repeat(2, 1fr);

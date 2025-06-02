@@ -29,7 +29,7 @@ textarea {
 
 .button {
   padding: 10px;
-  background-color: #422d2d;
+  background-color: #06122b;
   color: white;
   border: none;
   font-weight: bold;
@@ -38,15 +38,28 @@ textarea {
 }
 
 .button:hover {
-  background-color: #341f1f;
+  background-color: #ff0000b4;
 }
 
 .error {
-  color: #d93025;
+  color: #ff1100;
   font-size: 0.85rem;
   margin-top: 0.25rem;
   margin-bottom: 0.5rem;
 }
 
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espaço entre o checkbox e o texto */
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+.checkboxLabel input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
 
 

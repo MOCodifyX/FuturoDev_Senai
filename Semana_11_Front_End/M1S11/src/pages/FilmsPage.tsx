@@ -60,6 +60,10 @@ function FilmsPage() {
 
   return (
     <div>
+      
+      <br />
+      <br />
+
       <h1>Catálogo de Filmes</h1>
 
       {selectedFilm ? (
