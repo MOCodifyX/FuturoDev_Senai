@@ -15,7 +15,6 @@ function DetailItemPage() {
 
      return (
         <div>
-            <h1>This is the detail item page.</h1>
 
             <h2>Item ID: {items.id}</h2>
             <p>Name: {items.name}</p>

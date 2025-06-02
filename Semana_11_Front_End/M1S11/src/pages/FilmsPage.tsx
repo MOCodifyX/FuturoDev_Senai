@@ -60,7 +60,7 @@ function FilmsPage() {
 
   return (
     <div>
-      
+
       <br />
       <br />
 
@@ -71,6 +71,10 @@ function FilmsPage() {
       ) : (
         <FilmsGrid films={fakeFilms} onSeeDetails={setSelectedFilmId} />
       )}
+
+      <br />
+      <br />
+
     </div>
   );
 }

@@ -8,6 +8,8 @@ import FilmsPage from './pages/FilmsPage'
 import SynopsisPage from './pages/SynopsisPage'
 import ContactPage from './pages/ContactPage'
 
+import Footer from './components/organisms/Footer';
+
 import { ThemeContext } from './context/ThemeContext'
 
 
@@ -36,6 +38,8 @@ function App() {
           <Route path='/redirect' element={<Navigate to='HomePage' />} />
 
         </Routes>
+
+        <Footer></Footer>
 
   </div>
 

@@ -1,4 +1,4 @@
-
+import styles from './SynopsisCard.module.css';
 
 type Film = {
   id: string;
@@ -16,8 +16,8 @@ type SynopsisCarProps = {
 
 export const SynopsisCard = ({ film, onBack }: SynopsisCarProps) => {
   return (
-    <div className="film-details">
-      <h2>{film.name}</h2>
+    <div className={styles.filmDetails}>
+      <h1>{film.name}</h1>
       <img src={`/img/${film.image}`} alt={`Capa do filme ${film.name}`} />
       <p><strong>Gênero:</strong> {film.gender}</p>
       <p><strong>Idade Indicada:</strong> {film.age} anos</p>

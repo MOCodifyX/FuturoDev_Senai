@@ -1,8 +1,11 @@
 .filmsGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 2rem;
-  padding: 1rem;
+    height: 600px;       
+    overflow-y: auto;     
+    border: 1px solid #ccc;   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem;
+    padding: 1rem;
 }
 
 .filmsGrid img {
