@@ -1,76 +1,82 @@
-# 🚀 Exercícios Semana 9 do Curso **FuturoDev** - SENAI
+# 🚀 Exercícios Semana 11 do Curso **FuturoDev** - SENAI
 
 Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 
-Link para o resultado final da junção das atividades 1 até 5:
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_9_Front_End/Exercises/)** 
-
-Link para o resultado final da atividades 6:
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_9_Front_End/Exercises/)** 
-
-// TROCAR O LINK PARA O CORRETO //
+Link para o resultado final da junção das atividades:
+🔗 **[👉 Visualizar Exercício](https://m1s11.vercel.app/)** 
 
 ---
 
-## ➕ **Exercise 1 - Gerenciador de tarefas: Adição de tarefas**
+## 🏷️ **Exercise 1 - Ticket Online: Criação de Projeto**
 📌 **Descrição:**  
 
-Estaremos desenvolvendo uma página de gestão de tarefas diárias. Essas tarefas deverão possuir:
+Você tem a tarefa de criar uma loja de tickets de cinema, nosso desenvolvimento será com foco na exibição de filmes, sua primeira tarefa é criar o Projeto TicketOnline e fazer a estruturação de pastas do mesmo. O projeto será uma SPA desenvolvida usando React.
 
-- Campo de descritivo;
-- Seletor de período (Manhã/Tarde/Noite);
-- Status de tarefa concluída.
+- Utilizar Atomic Design;
 
-Sua primeira missão é criar o componente para adição de uma nova tarefa, onde teremos a escolha do descritivo, a opção de período e um botão de adição. A nova tarefa deve ser adicionada ao Array de tarefas do componente principal (componente Tarefas).
+- Utilização de React Router: Inicio, Filmes, DetalhesFilmes e Contato.
 
 ---
 
-## 📝 **Exercise 2 - Gerenciador de tarefas: Exibição de tarefas**
+## 📝 **Exercise 2 - Ticket Online: Navbar e Temas**
 📌 **Descrição:**  
 
-As tarefas devem ser exibidas em 3 colunas (cada uma para um período) abaixo do componente de adição (no componente principal).
+Você deve montar um menu de navegação para nossa SPA, tendo as opções: : **Inicio, Filmes e Contato**. Também teremos uma opção de controle de **tema claro/escuro**, que deve ser feito via icone e não texto escrito (**Utilize Context API**).
 
-Basicamente, trata-se da listagem das tarefas e também se deve mostrar a quantidade de tarefas que foram concluídas.
+- Criar Menu;
+
+- Criar Tema Claro/Escuro usando ContextAPI.
 
 ---
 
-## ✔️ **Exercise 3 - Gerenciador de tarefas: Tarefas concluídas**
+## 🎞️ **Exercise 3 - Ticket Online: Componente Filme**
 📌 **Descrição:**  
 
-Cada item da nossa lista deve ter um checkbox de tarefa concluída; se a tarefa estiver concluída: a descrição da mesma deve estar em um tom de cinza claro e taxado.
----
+Na demanda destinada ao filmes você deverá criar um **componente de apresentação** para o filme, contendo seu **nome, imagem de cartaz, genero, idade indicada** e possuir um **botão de ver mais informações**.
 
-## 🔋 **Exercise 4 - Gerenciador de tarefas: Barra de progresso**
-📌 **Descrição:**  
+Após criar esse componente deve criar um **grid** que poderá receber varios filmes e exibir eles.
 
-O próximo passo é a criação de um componente de percentual de conclusão. Esse componente deverá receber, no mínimo, 2 props, que são para o total de tarefas e o total de tarefas concluídas...
+Também precisaremos de um componente para **exibição dos detalhes do filme**, será exibido todos os dados que temos no filme e adicionado a **sinopse**, nesse componente teremos um **botão de voltar**.
 
-Com esses dois dados podemos fazer o cálculo de percentual de conclusão.
+- Criar componente de Filmes;
 
-Cálculo: const progresso = (tarefasCompletas / totalTarefas) * 100
+- Criar Grid de filmes;
 
----
-
-## 🎲 **Exercise 5 - Gerenciador de tarefas: Persistencia de dados**
-📌 **Descrição:**  
-
-Faremos uma sessão de bebidas., Nela teremos categorias:
-
-Para a persistência de dados use o localStorage e seu conhecimento em json.
-
-Você deve sempre salvar alguma alteração nas tarefas (status ou nova tarefa) no localStorage e, quando a aplicação for iniciada, deve buscar possíveis tarefas que existam no mesmo.
-
-Para o gerenciamento do localStorage, aconselho a utilização do useEfect.
+- Criar componente de detalhes do Filme.
 
 ---
 
-## ⏱️ **Exercise 6 - Cronômetro**
+## ☎️ **Exercise 4 - Ticket Online:  Componente Contato**
 📌 **Descrição:**  
 
-Esse exercício é a entrega de uma atividade em Squads feita na  aula 2 da semana 9.
+O componente de contato será um **formulário** (use **React Hook Form**) para envio de email, nele teremos o preenchimento dos campos obrigatórios (e-mail, assunto e mensagem) e o campo opcional de urgencia (booleano). Verifique a passagem correta dos parametros por um alert ou console.log.
 
-O enunciado será apresentado em sala no dia da aula e terão tempo para desenvolvê-lo em Aula.
+- Criar formulário de e-mail usando React Hook Form.
 
-Entrega deste exercício deve ser feita obrigatoriamente via link do github e seguindo as orientações passadas em sala.
+---
+
+## 📝 **Exercise 5 - Ticket Online:  Templates e Pages**
+📌 **Descrição:**  
+
+Agora é a hora de terminar nossa aplicação, você deve criar os Templates e Pages listadas abaixo:
+
+- Teremos o **Header** (Navbar) e um **Footer** (crie um footer simples) aplicados no nosso App.tsx.
+
+- [M] **Inicio** (TemplateInicioPage e InicioPage): Exibirá somente uma imagem da frente de um cinema.
+
+- [M] **Filmes** (TemplateFilmesPage e FilmesPage): exibirá uma lista (mock 6 filmes) de filmes, onde você poderá ver os detalhes de um deles e será redicerionado a tela de FilmeDetalhe.
+
+- **Detalhes Filme**: (TemplateDetFilmesPage e DetFilmesPage): exibição das informações do filme e sinopse.
+
+- [M] **Contato** (TemplateContatoPage e ContatoPage): exibição do formulário de contato por e-mail.
+
+[M] = Acesso por menu.
+
+---
+
+## 📎 **Exercise 6 - Ticket Online:  Build e Deploy**
+📌 **Descrição:**  
+
+Faça o build e deploy da aplicação utilizando o Vercel, nessa entrega deverá **disponibilizar o link de acesso da aplicação.**
 
 ---
