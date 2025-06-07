@@ -399,10 +399,14 @@ Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 <details>
   <summary><strong>Aula 1 - 26/05/25 </strong></summary>
 
+  *Nesta aula, aprendemos os seguintes tópicos:*
+
 - Roteamento em aplicações React.
 - React Router DOM
 - Context API
-
+  
+</details>
+<details>
   <summary><strong>Aula 2 - 28/05/25 </strong></summary>
 
   *Nesta aula, aprendemos os seguintes tópicos:*
