@@ -392,3 +392,34 @@ Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 </details>
 
 ---
+
+## 📝 **Semanana 11**
+ 📌[Material de Apoio(PDF)](PDF_Aulas/M1S11.pdf)
+
+<details>
+  <summary><strong>Aula 1 - 26/05/25 </strong></summary>
+
+- Roteamento em aplicações React.
+- React Router DOM
+- Context API
+
+  <summary><strong>Aula 2 - 28/05/25 </strong></summary>
+
+  *Nesta aula, aprendemos os seguintes tópicos:*
+  
+- React Hook Form
+- Build
+- Deploy
+
+</details>
+<details>
+  <summary><strong>Aula 3 - 30/05/25 </strong></summary>
+
+   *Nesta aula, aprendemos os seguintes tópicos:*
+
+- Configurando um readme
+- Revisão
+
+</details>
+
+---
