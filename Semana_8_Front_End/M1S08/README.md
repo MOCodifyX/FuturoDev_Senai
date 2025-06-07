@@ -3,9 +3,7 @@
 Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 
 Link para o resultado final da junção das atividades
-🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_8_Front_End/Exercises/)** 
-
-// TROCAR O LINK PARA O CORRETO //
+🔗 **[👉 Visualizar Exercício](https://m1s08.vercel.app/)** 
 
 ---
 
