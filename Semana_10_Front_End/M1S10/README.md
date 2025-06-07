@@ -1,54 +1,119 @@
-# React + TypeScript + Vite
+# 🚀 Exercícios Semana 10 do Curso **FuturoDev** - SENAI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém os exercícios do curso **FuturoDev** do **SENAI**.
 
-Currently, two official plugins are available:
+Link para o resultado final da junção das atividades:
+🔗 **[👉 Visualizar Exercício](https://mocodifyx.github.io/FuturoDev_Senai/Semana_9_Front_End/Exercises/)** 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📓 **Exercise 1 - Loja de plantas: Estrutura do projeto**
+📌 **Descrição:**  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Sua demanda é desenvolver um e-commerce de plantas de jardim. Para iniciar, você deve **criar o Projeto** de React + TypeScript e fazer a criação das pastas, seguindo os moldes do **Atomic Design.**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+ 
+
+- src
+
+   - components
+
+   - atoms
+
+   - molecules
+
+   - organisms
+
+   - templates
+
+- pages
+
+---
+
+## ⚛️ **Exercise 2 - Loja de plantas: Átomos**
+📌 **Descrição:**  
+
+Crie os **3** componentes atômicos:
+
+- Button:
+
+  - Props: variant: ""primary" | "secundary".
+
+- PriceTag:
+
+  - Props: value: number;
+
+  - Deve aparecer como formatação monetária (R$ 12,30).
+
+- PlantIcon:
+
+  - Props: size: "sm" | "md" | "lg";
+
+  - Usar ícone @‌mui/icons-material/LocalFlorist.
+
+---
+
+## 📝 **Exercise 3 - Loja de plantas: Molécula**
+📌 **Descrição:**  
+
+Crie um Card de produtos (PlantCard) usando os átomos da tarefa anterior e qualquer componente extra que achar necessário. Utilize CSS Modules para estilização, se necessário.
+
+**Props**: Plant (id, name, price e light: "sun" | "shade")
+
+---
+
+## ✔️ **Exercise 4 - Loja de plantas: Organismos Responsivo**
+📌 **Descrição:**  
+
+Crie o Componente PlantGrid, que será basicamente para apresentar os CardPlants.
+
+Use useMediaQuery para:
+
+- Mostrar 1 coluna em mobile;
+
+- 2 colunas em tablet;
+
+- 3 colunas em desktop.
+
+---
+
+## 🖼️ **Exercise 5 - Loja de plantas: Tema**
+📌 **Descrição:**  
+
+Você deve criar uma variação do **tema claro e escuro** utilizando o theme do Material UI. O tema claro deve ser baseado em um tom de marrom e, o escuro, em um tom de verde; devemos ter um **botão** para fazer a mudança destes temas.
+
+Deve aplicar o temas no default e no paper; nesse caso, aqui, é interessante a utilização do paper em pontos chaves do projeto para colaborar com o design.
+
+Sugestão de cores:
+Claro: #c2a39a | #e1d1c8
+Escuro: #001600 | #0a3007
+
+---
+
+## 📎 **Exercise 6 - Loja de plantas: Template e Page**
+📌 **Descrição:**  
+
+Crie o **StoreLayout**:
+
+- Header com logo;
+
+- Área de conteúdo;
+
+- Footer.
+
+Crie a página **PlantStore**:
+
+- Usa o template;
+
+- Mostra o grid com pelo menos 6 produtos mockados;
+  
+
+```
+const mockPlants: Plant[] = [
+  { id: "1", name: "Suculenta", price: 29.9, light: "sun" },
+  { id: "2", name: "Samambaia", price: 39.9, light: "shade" },
+  // Adicione mais 4 itens...
+];
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
